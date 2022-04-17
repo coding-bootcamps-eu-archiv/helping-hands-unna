@@ -5,18 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+      rel="stylesheet"
+    />
     <title>direkt spenden</title>
   </head>
-  <header>
-    <h1>Spenden</h1>
-    <p>wie viel möchtest du spenden?</p>
-    <input type="text" />
-    <button>€</button>
-    <button>aktuelle Spendenaktion</button>
-    <p>Spendenpakete</p>
-    <h2>Was kann mit ... erreicht werden?</h2>
-  </header>
   <body>
+    <header class="header">
+      <nav class="navigation">
+        <img
+          class="navigation__logo"
+          src="../spendenseite/picutre/helpinghands-unna.png"
+          alt="Helping Hands Logo"
+        />
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__home-button">
+            <img src="./img/home-icon.png" alt="" />
+          </li>
+          <li class="navigation__item">aktuelle Spendenaktion</li>
+          <li class="navigation__item">Über Uns</li>
+          <li class="navigation__item">Erreichtes</li>
+          <li class="navigation__item">direkt Spenden</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="direktspenden_h1">Unsere Spendenmöglichkeiten</h1>
+
+      <div class="info_container">
+        <h2 class="text_h2 text_headline">Was kann mit ... erreicht werden?</h2>
+        <section class="infobox_bg">
+          <div>
+            <p>5€</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              velit facilis vel cupiditate eligendi.
+            </p>
+          </div>
+          <div>
+            <p>10€</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              velit facilis vel cupiditate eligendi. !
+            </p>
+          </div>
+          <div>
+            <p>30€</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              velit facilis vel cupiditate eligendi.
+            </p>
+          </div>
+          <div>
+            <p>100€</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              velit facilis vel cupiditate eligendi.
+            </p>
+          </div>
+          <div>
+            <p>1000€</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              velit facilis vel cupiditate eligendi.
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="bank_container">
+        <div class="bank_bg">
+          <section class="bank_contact">
+            <h2 class="text_h2">Kontoverbindung</h2>
+            <p class="text_information text_right">
+              <b> Helping Hands Unna, Melanie Gretzinger</b> <br />
+              Sparkasse UnnaKamen <br />
+              IBAN: DE57 4435 0060 1000 2221 49 <br />
+              Verwendungszweck: “Ukrainehilfe”
+            </p>
+          </section>
+        </div>
+        <div class="bank_bg">
+          <section class="bank_paypal">
+            <h2 class="text_h2">Paypal</h2>
+            <p class="text_information text_right">
+              helpinghandsunna@gmail.com
+            </p>
+            <img
+              src="./picutre/qr2.jpeg"
+              alt="QRCode für Paypal"
+              class="text_right"
+            />
+          </section>
+        </div>
+      </div>
+      <section>
+        <h2 class="text_h2">Kontakt</h2>
+        <p class="text_information text_right">
+          <b>Helping Hands Unna e.V. - Arne Schulte- Altedorneburg-</b>
+          Hertingerstraße 80 59423 Unna <br />
+          Mail: arne@ukrainehilfe-unna.de <br />
+          Tel: +49 177 400 3004
+        </p>
+
+        <button class="btn_socialmedia">
+          <img src="./picutre/fb.svg" alt="facebook link" />
+        </button>
+        <button class="btn_socialmedia">
+          <img src="./picutre/instagram.svg" alt="intstagram link" />
+        </button>
+        <button class="btn_socialmedia">
+          <img src="./picutre/twitter.svg" alt="twitter link" />
+        </button>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>facebook</li>
+          <li>instagram</li>
+          <li>twitter</li>
+        </ul>
+      </nav>
+    </footer>
     <script src="../script.js"></script>
   </body>
 </html>
