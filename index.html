@@ -14,71 +14,121 @@
 </head>
 
 <body>
+
     <header class="header">
-        <nav class="navigation">
-            <img class="navigation__logo" src="./img/helping-hands-logo.png" alt="Helping Hands Logo">
-            <ul class="navigation__list">
-                <li class="navigation__item navigation__home-button"><img src="./img/home-icon.svg" alt=""></li>
-                <li class="navigation__item">aktuelle Spendenaktion</li>
-                <li class="navigation__item">Über Uns</li>
-                <li class="navigation__item">Erreichtes</li>
-                <li class="navigation__item">direkt Spenden</li>
+        <nav class="navbar">
+            <a href="#" class="nav-branding"><img class="navigation__logo" src="./img/helping-hands-logo.png"
+                    alt="Helping Hands Logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">aktuelle Spendenaktion</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Über Uns</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Erreichtes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">direkt Spenden</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
-    <main>
 
-        <section class="hero-section">
+    <main>
+        <section class="home-page__content-section">
+            <img class="hero-section__image-mobile" src="./img/hero-image-mobile.png" alt="">
             <div class="hero-section__header">
-                <p class="hero-section__text--medium">Ukrainehilfe Unna</p>
+                <p class="hero-section__overline">Ukrainehilfe Unna</p>
                 <h2 class="hero-section__heading">Hand in Hand für die Ukraine</h2>
                 <small class="hero-section__small">Wir versorgen vom Krieg betroffene Menschen mit lebensnotwendigen
                     Materialien</small>
             </div>
-            <img class="hero-section__image" src="./img/filler-main.png" alt="">
-            <div class="hero-section__campaign">
-                <div class="campaign__content-wrapper">
-                    <p class="campaign__text">Aktuelle Spendenaktion</p>
+            <div class="hero-section__campaign-wrapper">
+                <div class="hero-section__campaign">
+                    <p class="campaign__overline">Aktuelle Spendenaktion</p>
                     <h2 class="campaign__heading">"UNNA 60.000"</h2>
-
                     <button class="button campaign__button">jetzt spenden</button>
                 </div>
             </div>
         </section>
 
-        <section class="content-section">
-            <div class="gala-text">
-                <p class="gala-text__overline">HÖHEPUNKT</p>
-                <h2 class="gala-text__heading">SPENDENGALA</h2>
-                <div class="gala-text__dates-container">
-                    <p class="gala-text__dates"><span class="gala-text--bold">Wann:</span> 13.Mai 2022</p>
-                    <p class="gala-text__dates"><span class="gala-text--bold">Uhrzeit:</span>19:00 Uhr</p>
+        <section class="home-page__content-section">
+            <div class="gala-section content">
+                <div class="gala-text">
+                    <p class="gala-text__overline">HÖHEPUNKT</p>
+                    <h2 class="gala-text__heading">SPENDENGALA</h2>
+                    <div class="gala-text__dates-container">
+                        <p class="gala-text__dates"><span class="gala-text--bold">Wann:</span> 13.Mai 2022</p>
+                        <p class="gala-text__dates"><span class="gala-text--bold">Uhrzeit:</span>19:00 Uhr</p>
+                    </div>
+                    <p class="gala-text__location"><span class="gala-text--bold">Location:</span> Neue Schmiede</p>
+                    <small class="gala-text__location-details">Neue Schmiede | Hellweg 31-33 | 59423 Unna</small>
+                    <p class="gala-text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                        magnam
+                        sequi ab maxime rem, delectus,
+                        assumenda nesciunt minima praesentium illo dignissimos quo earum quod velit veritatis impedit
+                        iure,
+                        dolorum adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque perspiciatis
+                        consequatur rem dignissimos quibusdam! Amet natus soluta nesciunt modi enim vitae nostrum nulla
+                        est,
+                        sequi aspernatur commodi minus dicta! Laboriosam!</p>
                 </div>
-                <p class="gala-text__location"><span class="gala-text--bold">Location:</span> Neue Schmiede</p>
-                <small class="gala-text__location-details">Neue Schmiede | Hellweg 31-33 | 59423 Unna</small>
-                <p class="gala-text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni magnam
-                    sequi ab maxime rem, delectus,
-                    assumenda nesciunt minima praesentium illo dignissimos quo earum quod velit veritatis impedit iure,
-                    dolorum adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque perspiciatis
-                    consequatur rem dignissimos quibusdam! Amet natus soluta nesciunt modi enim vitae nostrum nulla est,
-                    sequi aspernatur commodi minus dicta! Laboriosam!</p>
-            </div>
-            <div class="gala-images">
-                <img class="gala-image-one" src="./img/filler-gala-vertical.png" alt="">
-                <img class="gala-image-two" src="./img/filler-gala-vertical.png" alt="">
-                <img class="gala-image-three" src="./img/filler-gala-horizontal.png" alt="">
+
             </div>
         </section>
+
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li>facebook</li>
-                <li>instagram</li>
-                <li>twitter</li>
+
+    <footer class="footer">
+        <nav class="footer__navigation">
+            <h3 class="footer-navigation__heading">Weitere Informationen:</h3>
+            <ul class="footer__navigation-list">
+                <li>Datenschutz</li>
+                <li>Impressum</li>
+                <li>Cookie-Einstellungen</li>
             </ul>
         </nav>
+        <div class="footer-address-wrapper">
+            <address class="footer__social-media">
+                <h3 class="footer__heading">Social Media</h3>
+                <ul class="social-media__list">
+                    <li>
+                        <img src="./img/facebook-logo.svg" alt="facebook">
+                    </li>
+                    <li>
+                        <img src="./img/instagram-logo.svg" alt="instagram">
+                    </li>
+                    <li>
+                        <img src="./img/twitter-logo.svg" alt="twitter">
+                    </li>
+                </ul>
+            </address>
+            <address class="footer__adress">
+                <h3 class="footer__heading">Adresse:</h3>
+                Helping Hands Unna e.V.<br>
+                Hertingerstraße 80<br>
+                59423 Unna<br>
+            </address>
+            <address class="footer__contact">
+                <h3 class="footer__heading">Kontakt:</h3>
+                Arne Schulte-Altedorneburg <br>
+                Mail: <a class="footer__link" href="mailto:arne@ukrainehilfe-unna.de">arne@ukrainehilfe-unna.de</a><br>
+                Tel.: <a class="footer__link" href="tel:+491774003004">+49 177 400 3004</a><br>
+            </address>
+            <button class="button">jetzt spenden</button>
+        </div>
+        <p class="footer__bootcamp">Mit herzlicher Unterstützung der <span class="footer__attendees">Attendees</span>
+            des Coding Bootcamps Europe.
+        </p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
