@@ -22,11 +22,19 @@ body {
 /*** colors & fontweight***/
 
 :root {
-  --c-bg-header: lightgrey;
+  --bg-blue: rgba(0, 125, 250, 0.06);
+  --bg-white: #fffafa;
+  --bg-black: #343434;
+
+  --tx-black: #0b0a0b;
+  --tx-white: #fffafa;
+
+  --c-btn: #007dfa;
+  --c-btn-white: #fffafa;
+
+  --bg-nav-blue: rgba(0, 125, 250, 0.87);
 
   --fw-nav-items: 600;
-
-  --b-bg-color: ;
 }
 
 /********************************************************/
@@ -135,16 +143,21 @@ body {
 }
 
 /** About Page Styling **/
+
+.content {
+  max-height: 40rem;
+}
+
 li {
   list-style: none;
 }
 
 .white_background {
-  background-color: #fffafa;
+  background-color: var(--w-bg-color);
 }
 
 .blue_background {
-  background-color: #007dfa0f;
+  background-color: var(--b-bg-color);
 }
 /** font style **/
 
@@ -161,9 +174,10 @@ li {
 .content__para {
   font-weight: 400;
   font-size: 1rem;
+  flex: 1;
 }
 
-/** Grid **/
+/** Grid and Flex **/
 
 .container {
   display: grid;
@@ -177,12 +191,47 @@ li {
   padding-left: 4rem;
 }
 
+.text__section__flexbox {
+  display: flex;
+  gap: 10rem;
+  padding-bottom: 4rem;
+}
+
 .img__section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.img__section_small {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-template-rows: 50% 50%;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/** Button Style **/
+.button__container {
+  position: absolute;
+  right: 10rem;
+}
+
+.btn_style {
+  background-color: transparent;
+  color: var(--c-btn);
+  border: 2px solid var(--c-btn);
+  border-radius: 2px;
+  padding: 0.5rem;
+  width: 8rem;
+}
+
+.btn_style:hover {
+  color: white;
+  background-color: #007dfa;
 }
 
 /** About Page Styling End **/
