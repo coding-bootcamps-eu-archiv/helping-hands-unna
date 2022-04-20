@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <header class="header">
         <nav class="navbar">
             <a href="#" class="nav-branding"><img class="navigation__logo" src="./img/helping-hands-logo.png"
@@ -42,25 +41,31 @@
     </header>
 
     <main>
+
+        <!----------------| hero section |---------------->
         <section class="home-page__content-section">
-            <img class="hero-section__image-mobile" src="./img/hero-image-mobile.png" alt="">
-            <div class="hero-section__header">
-                <p class="hero-section__overline">Ukrainehilfe Unna</p>
-                <h2 class="hero-section__heading">Hand in Hand für die Ukraine</h2>
-                <small class="hero-section__small">Wir versorgen vom Krieg betroffene Menschen mit lebensnotwendigen
-                    Materialien</small>
-            </div>
-            <div class="hero-section__campaign-wrapper">
-                <div class="hero-section__campaign">
-                    <p class="campaign__overline">Aktuelle Spendenaktion</p>
-                    <h2 class="campaign__heading">"UNNA 60.000"</h2>
-                    <button class="button campaign__button">jetzt spenden</button>
+            <div class="hero-section">
+                <img class="hero-section__image-mobile" src="./img/hero-image-mobile.png" alt="">
+                <div class="hero-section__header">
+                    <p class="hero-section__overline">Ukrainehilfe Unna</p>
+                    <h2 class="hero-section__heading">Hand in Hand für die Ukraine</h2>
+                    <p class="hero-section__small">Wir versorgen vom Krieg betroffene Menschen mit lebensnotwendigen
+                        Materialien</p>
+                </div>
+                <img class="hero-section__image" src="./img/filler-hero.png" alt="">
+                <div class="hero-section__campaign-wrapper">
+                    <div class="hero-section__campaign">
+                        <p class="campaign__overline">Aktuelle Spendenaktion</p>
+                        <h2 class="campaign__heading">"UNNA 60.000"</h2>
+                        <button class="button campaign__button">jetzt spenden</button>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!----------------| gala section |---------------->
         <section class="home-page__content-section">
-            <div class="gala-section content">
+            <div class="gala-section">
                 <div class="gala-text">
                     <p class="gala-text__overline">HÖHEPUNKT</p>
                     <h2 class="gala-text__heading">SPENDENGALA</h2>
@@ -80,13 +85,21 @@
                         est,
                         sequi aspernatur commodi minus dicta! Laboriosam!</p>
                 </div>
-
+                <img class="gala-image-one" src="./img/filler-gala-horizontal-medium.png" alt="">
             </div>
         </section>
-
     </main>
 
     <footer class="footer">
+        <!----------------| attendee info |---------------->
+        <section class="footer__bootcamp">
+            <h3 class="footer__heading">Unterstützung & Abschlußprojekt</h3>
+            <p class="footer__attendees">Mit freundlicher Unterstützung der <span
+                    class="footer__attendees--modifier">Attendees</span>
+                des Coding Bootcamps Europe.
+            </p>
+        </section>
+        <!----------------| navigation |---------------->
         <nav class="footer__navigation">
             <h3 class="footer-navigation__heading">Weitere Informationen:</h3>
             <ul class="footer__navigation-list">
@@ -95,7 +108,18 @@
                 <li>Cookie-Einstellungen</li>
             </ul>
         </nav>
+        <!----------------| fundraiser section |---------------->
+        <section class="footer__fundraiser">
+            <h3 class="footer__heading">Aktuelle Spendenaktion</h3>
+            <div class="footer__logo-wrapper">
+                <img src="./img/unna-logo-bw.svg" alt="" class="footer__fundraiser-logo">
+                <button class="button">jetzt spenden</button>
+                <a href="#">Spendengala</a>
+            </div>
+        </section>
+        <!----------------| address section |---------------->
         <div class="footer-address-wrapper">
+            <!--- social media --->
             <address class="footer__social-media">
                 <h3 class="footer__heading">Social Media</h3>
                 <ul class="social-media__list">
@@ -110,23 +134,21 @@
                     </li>
                 </ul>
             </address>
+            <!--- organisation address --->
             <address class="footer__adress">
                 <h3 class="footer__heading">Adresse:</h3>
                 Helping Hands Unna e.V.<br>
                 Hertingerstraße 80<br>
                 59423 Unna<br>
             </address>
+            <!--- contact data --->
             <address class="footer__contact">
                 <h3 class="footer__heading">Kontakt:</h3>
                 Arne Schulte-Altedorneburg <br>
                 Mail: <a class="footer__link" href="mailto:arne@ukrainehilfe-unna.de">arne@ukrainehilfe-unna.de</a><br>
                 Tel.: <a class="footer__link" href="tel:+491774003004">+49 177 400 3004</a><br>
             </address>
-            <button class="button">jetzt spenden</button>
         </div>
-        <p class="footer__bootcamp">Mit herzlicher Unterstützung der <span class="footer__attendees">Attendees</span>
-            des Coding Bootcamps Europe.
-        </p>
     </footer>
 
     <script src="script.js"></script>
