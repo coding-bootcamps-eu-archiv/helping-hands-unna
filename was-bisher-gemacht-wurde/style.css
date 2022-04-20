@@ -98,3 +98,21 @@ main {
   background-color: #ffe6cc;
   width: 15%;
 }
+
+table {
+  border-spacing: 10px;
+}
+
+th {
+  background-color: aliceblue;
+}
+
+td {
+  background-color: aliceblue;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 10px;
+}
