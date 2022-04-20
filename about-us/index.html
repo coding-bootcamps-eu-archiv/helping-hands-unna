@@ -4,85 +4,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css" />
     <title>Über uns</title>
   </head>
   <body>
     <!--nav bar -->
     <header class="header">
-      <nav class="navigation">
-        <img
-          class="navigation__logo"
-          src="./img/helping-hands-logo.png"
-          alt="Helping Hands Logo"
-        />
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__home-button">
-            <img src="./img/home-icon.png" alt="" />
-          </li>
-          <li class="navigation__item">aktuelle Spendenaktion</li>
-          <li class="navigation__item">Über Uns</li>
-          <li class="navigation__item">Erreichtes</li>
-          <li class="navigation__item">direkt Spenden</li>
-        </ul>
+      <nav class="navbar">
+          <a href="#" class="nav-branding"><img class="navigation__logo" src="./img/helping-hands-logo.png"
+                  alt="Helping Hands Logo"></a>
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="#" class="nav-link">aktuelle Spendenaktion</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Über Uns</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Erreichtes</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">direkt Spenden</a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
       </nav>
-    </header>
+  </header>
+
     <!-- main content -->
-    <h1>Über uns</h1>
-    <article class="content parent">
-      <h2 class="content__header">Wer sind wir?</h2>
-      <h3 class="content__subheader">Ukrainehilfe-Unna</h3>
-      <p class="content__para">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa aperiam
-        inventore dolore cumque aut consequuntur consectetur unde, sint harum
-        reprehenderit assumenda? Dolore illo nisi voluptatem sint repellat!
-        Magnam, minima iste?
-      </p>
-      <small
-        >Verein „Helping Hands Unna e.V.", Lessingstraße 41, 59423 Unna, hier in
-        Persona Arne Schulte-Altedorneburg</small
-      >
-    </article>
+    <main>
+      <article class="content container">
+        <section class="text__section">
+          <h2>Über uns</h1>
+          <h2 class="content__header">Wer sind wir?</h2>
+          <h3 class="content__subheader">Ukrainehilfe-Unna</h3>
+          <p class="content__para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+            aperiam inventore dolore cumque aut consequuntur consectetur unde,
+            sint harum reprehenderit assumenda? Dolore illo nisi voluptatem sint
+            repellat! Magnam, minima iste?
+          </p>
 
-    <article class="content">
-      <h2 class="content__header">Was machen wir?</h2>
-      <p class="content__para">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa aperiam
-        inventore dolore cumque aut consequuntur consectetur unde, sint harum
-        reprehenderit assumenda? Dolore illo nisi voluptatem sint repellat!
-        Magnam, minima iste?
-      </p>
-    </article>
+          <p class="content__para"
+            >Verein „Helping Hands Unna e.V.", Lessingstraße 41, 59423 Unna,
+            hier in Persona Arne Schulte-Altedorneburg</p
+          >
+        </section>
+        <section class="img__section">
+          <img src="img/platzhalter_img.PNG" alt="" />
+        </section>
+      </article>
+      <article class="content container white_background">
+        <section class="text__section">
+        <h2 class="content__header">Was machen wir?</h2>
+        <p class="content__para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa aperiam
+          inventore dolore cumque aut consequuntur consectetur unde, sint harum
+          reprehenderit assumenda? Dolore illo nisi voluptatem sint repellat!
+          Magnam, minima iste?
+        </p>
+      </section>
+      <section class="img__section">
+        <img src="img/platzhalter_img.PNG" alt="" />
+      </section>
+      </article>
 
-    <article class="content">
-      <h2 class="content-header">Wie arbeiten wir?</h2>
-      <button class="button">Jetzt spenden</button>
+      <article class="content">
+        <h2 class="content-header">Wie arbeiten wir?</h2>
+        <button class="button">Jetzt spenden</button>
 
-      <blockquote>"Was passiert mit meinen Spenden?"</blockquote>
-    </article>
+        <blockquote>"Was passiert mit meinen Spenden?"</blockquote>
+      </article>
 
-    <!-- PDF mit Zertifikaten -->
-    <article class="content">
-      <h2 class="content-header">Zertifikate</h2>
-      <img
-        src="../about-us/img/pdf-preview-01.png"
-        width="300px"
-        height="500px"
-        alt=""
-      />
-      <img
-        src="../about-us/img/pdf-preview-02.png"
-        width="300px"
-        height="500px"
-        alt=""
-      />
-      <a href="../about-us/pdf/unna_6000_zertifikate.pdf">Zertifikate</a>
-    </article>
-
-    <!--spenden links-->
-    <button class="button">aktuelle Spendenaktion</button>
+      <!-- PDF mit Zertifikaten -->
+      <article class="certificate_content">
+        <h2 class="content-header">Zertifikate</h2>
+        <img
+          src="../about-us/img/pdf-preview-01.png"
+          width="300px"
+          height="500px"
+          alt=""
+        />
+        <img
+          src="../about-us/img/pdf-preview-02.png"
+          width="300px"
+          height="500px"
+          alt=""
+        />
+        <a href="../about-us/pdf/unna_6000_zertifikate.pdf">Zertifikate</a>
+      </article>
+    </main>
 
     <!-- footer -->
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
