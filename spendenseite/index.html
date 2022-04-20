@@ -13,69 +13,41 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navigation">
-        <img
-          class="navigation__logo"
-          src="../spendenseite/picutre/helpinghands-unna.png"
-          alt="Helping Hands Logo"
-        />
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__home-button">
-            <img src="./img/home-icon.png" alt="" />
+      <nav class="navbar">
+        <a href="#" class="nav-branding"
+          ><img
+            class="navigation__logo"
+            src="./picture/helpinghands-unna.png"
+            alt="Helping Hands Logo"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">aktuelle Spendenaktion</a>
           </li>
-          <li class="navigation__item">aktuelle Spendenaktion</li>
-          <li class="navigation__item">Über Uns</li>
-          <li class="navigation__item">Erreichtes</li>
-          <li class="navigation__item">direkt Spenden</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Über Uns</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Erreichtes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">direkt Spenden</a>
+          </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
-    <main>
+    <main class="main_size">
       <h1 class="direktspenden_h1">Unsere Spendenmöglichkeiten</h1>
 
-      <div class="info_container">
-        <h2 class="text_h2 text_headline">Was kann mit ... erreicht werden?</h2>
-        <section class="infobox_bg">
-          <div>
-            <p>5€</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              velit facilis vel cupiditate eligendi.
-            </p>
-          </div>
-          <div>
-            <p>10€</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              velit facilis vel cupiditate eligendi. !
-            </p>
-          </div>
-          <div>
-            <p>30€</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              velit facilis vel cupiditate eligendi.
-            </p>
-          </div>
-          <div>
-            <p>100€</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              velit facilis vel cupiditate eligendi.
-            </p>
-          </div>
-          <div>
-            <p>1000€</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              velit facilis vel cupiditate eligendi.
-            </p>
-          </div>
-        </section>
-      </div>
-      <div class="bank_container">
-        <div class="bank_bg">
+      <!---------------------Kontoverbindung------------------------------>
+      <div class="grid_container">
+        <div class="bank_bg img_left">
           <section class="bank_contact">
             <h2 class="text_h2">Kontoverbindung</h2>
             <p class="text_information text_right">
@@ -84,8 +56,11 @@
               IBAN: DE57 4435 0060 1000 2221 49 <br />
               Verwendungszweck: “Ukrainehilfe”
             </p>
+            <button class="btn_style">jetzt spenden</button>
           </section>
         </div>
+
+        <!------------------Paypal verbindung------------------------------>
         <div class="bank_bg">
           <section class="bank_paypal">
             <h2 class="text_h2">Paypal</h2>
@@ -93,41 +68,85 @@
               helpinghandsunna@gmail.com
             </p>
             <img
-              src="./picutre/qr2.jpeg"
-              alt="QRCode für Paypal"
+              src="./picture/qr2.jpeg"
+              alt="qrcode für paypal"
               class="text_right"
             />
           </section>
         </div>
-      </div>
-      <section>
-        <h2 class="text_h2">Kontakt</h2>
-        <p class="text_information text_right">
-          <b>Helping Hands Unna e.V. - Arne Schulte- Altedorneburg-</b>
-          Hertingerstraße 80 59423 Unna <br />
-          Mail: arne@ukrainehilfe-unna.de <br />
-          Tel: +49 177 400 3004
-        </p>
 
-        <button class="btn_socialmedia">
-          <img src="./picutre/fb.svg" alt="facebook link" />
-        </button>
-        <button class="btn_socialmedia">
-          <img src="./picutre/instagram.svg" alt="intstagram link" />
-        </button>
-        <button class="btn_socialmedia">
-          <img src="./picutre/twitter.svg" alt="twitter link" />
-        </button>
-      </section>
+        <!--------------------Kontakt--------------------------------------->
+        <div class="contact_bg">
+          <section class="bank_contact">
+            <h2 class="text_h2">Kontakt</h2>
+            <p class="text_information">
+              <b>Helping Hands Unna e.V.</b> <br />
+              <b> Arne Schulte</b> <br />
+              <b> Altedorneburg</b> <br />
+              <br />
+              Hertingerstraße 80 59423 Unna <br />
+              Mail: arne@ukrainehilfe-unna.de <br />
+              Tel: +49 177 400 3004
+            </p>
+          </section>
+        </div>
+
+        <!----------------------------Bild & Unna60 000 logo--------------------->
+        <div class="contact_bg box_logo_unna60">
+          <img src="./picture/logo-unna-bunt.png" alt="" class="unna60" />
+        </div>
+      </div>
     </main>
-    <footer>
-      <nav>
-        <ul>
-          <li>facebook</li>
-          <li>instagram</li>
-          <li>twitter</li>
+
+    <!---------------------------------footer----------------------------------->
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <h3 class="footer-navigation__heading">Weitere Informationen:</h3>
+        <ul class="footer__navigation-list">
+          <li>Datenschutz</li>
+          <li>Impressum</li>
+          <li>Cookie-Einstellungen</li>
         </ul>
       </nav>
+      <div class="footer-address-wrapper">
+        <address class="footer__social-media">
+          <h3 class="footer__heading">Social Media</h3>
+          <ul class="social-media__list">
+            <li>
+              <img src="./picture/fb.svg" alt="facebook" />
+            </li>
+            <li>
+              <img src="./picture/instagram.svg" alt="instagram" />
+            </li>
+            <li>
+              <img src="./picture/twitter.svg" alt="twitter" />
+            </li>
+          </ul>
+        </address>
+        <address class="footer__adress">
+          <h3 class="footer__heading">Adresse:</h3>
+          Helping Hands Unna e.V.<br />
+          Hertingerstraße 80<br />
+          59423 Unna<br />
+        </address>
+        <address class="footer__contact">
+          <h3 class="footer__heading">Kontakt:</h3>
+          Arne Schulte-Altedorneburg <br />
+          Mail:
+          <a class="footer__link" href="mailto:arne@ukrainehilfe-unna.de"
+            >arne@ukrainehilfe-unna.de</a
+          ><br />
+          Tel.:
+          <a class="footer__link" href="tel:+491774003004">+49 177 400 3004</a
+          ><br />
+        </address>
+        <button class="button">jetzt spenden</button>
+      </div>
+      <p class="footer__bootcamp">
+        Mit herzlicher Unterstützung der
+        <span class="footer__attendees">Attendees</span>
+        des Coding Bootcamps Europe.
+      </p>
     </footer>
     <script src="../script.js"></script>
   </body>
