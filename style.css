@@ -919,6 +919,103 @@ About
 }
 
 /********************************************************/
+/*** erreichtes ***/
+.h2-banner {
+  margin: 0;
+}
+
+.first-section {
+  padding-bottom: 2rem;
+}
+
+.first-banner {
+  background-color: var(--bg-yellow-secondary);
+  margin: 2rem 27rem 2rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 15rem;
+}
+
+.div-flex {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.div-summe {
+  margin: 1rem;
+  background-color: var(--bg-blue);
+  width: 20%;
+  padding: 2rem;
+  box-shadow: 0px 5px 5px lightblue;
+}
+
+.div-personen {
+  margin: 1rem;
+  background-color: var(--bg-blue);
+  width: 20%;
+  padding: 2rem;
+  box-shadow: 0px 5px 5px lightblue;
+}
+
+.div-lieferungen {
+  margin: 1rem;
+  background-color: var(--bg-blue);
+  width: 20%;
+  padding: 2rem;
+  box-shadow: 0px 5px 5px lightblue;
+}
+
+/************************************/
+
+.second-banner {
+  background-color: var(--bg-yellow-secondary);
+  margin: 2rem 0rem 2rem 14rem;
+  padding: 0.5rem 12rem 0.5rem 3rem;
+}
+
+table {
+  border-spacing: 10px;
+  table-layout: auto;
+  text-align: center;
+  width: 100%;
+}
+
+th {
+  background-color: aliceblue;
+  padding: 0.5rem;
+}
+
+td {
+  background-color: aliceblue;
+  border-collapse: collapse;
+  width: 25%;
+  padding: 1rem 2.5rem 1rem 2rem;
+}
+
+tr {
+  padding: 10rem;
+  width: 100%;
+}
+
+.tabelle {
+  margin: 3rem 14rem 3rem 14rem;
+}
+
+/*******************************************/
+
+.section-video {
+  background-color: rgba(0, 125, 250, 0.06);
+  margin-top: 5rem;
+  padding: 2rem 5rem 2rem 10rem;
+}
+
+/********************************************/
+
+@media screen {
+}
+
+/********************************************************/
 /*** footer ***/
 
 .footer {
