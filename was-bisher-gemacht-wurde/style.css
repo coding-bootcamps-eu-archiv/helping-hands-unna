@@ -1,0 +1,476 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+:root {
+  --c-bg-header: lightgrey;
+  --c-bg-footer: #343434;
+  --c-footer: #ffffff;
+  --fw-nav-items: 600;
+  --bg-white: #fffafa;
+  --bg-blue: rgba(0, 125, 250, 0.06);
+  --bg-yellow: rgba(255, 255, 0, 0.17);
+  --bg-yellow-secondary: rgba(255, 255, 0, 0.41);
+  --bg-black: #343434;
+  --bg-nav-blue: rgba(0, 125, 250, 0.87);
+}
+
+.header {
+  background-color: var(--c-bg-header);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__logo {
+  height: 3rem;
+  margin-left: 7.625rem;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.navigation__item {
+  display: flex;
+  align-items: center;
+  font-weight: var(--fw-nav-items);
+  margin-right: 5.1875rem;
+}
+
+.navigation__item:last-child {
+  margin-right: 7.5625rem;
+}
+
+.navigation__item:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.375rem;
+  text-decoration-thickness: 0.2rem;
+}
+
+.navigation__home-button {
+  height: 1rem;
+}
+
+/************************************/
+
+.h2-banner {
+  margin: 0;
+}
+
+.first-section {
+  padding-bottom: 2rem;
+}
+
+.first-banner {
+  background-color: var(--bg-yellow-secondary);
+  margin: 2rem 27rem 2rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 15rem;
+}
+
+.div-flex {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.div-summe {
+  margin: 1rem;
+  background-color: var(--bg-blue);
+  width: 20%;
+  padding: 2rem;
+  box-shadow: 0px 5px 5px lightblue;
+}
+
+.div-personen {
+  margin: 1rem;
+  background-color: var(--bg-blue);
+  width: 20%;
+  padding: 2rem;
+  box-shadow: 0px 5px 5px lightblue;
+}
+
+.div-lieferungen {
+  margin: 1rem;
+  background-color: var(--bg-blue);
+  width: 20%;
+  padding: 2rem;
+  box-shadow: 0px 5px 5px lightblue;
+}
+
+/************************************/
+
+.second-banner {
+  background-color: var(--bg-yellow-secondary);
+  margin: 2rem 0rem 2rem 14rem;
+  padding: 0.5rem 12rem 0.5rem 3rem;
+}
+
+table {
+  border-spacing: 10px;
+  table-layout: auto;
+  text-align: center;
+  width: 100%;
+}
+
+th {
+  background-color: aliceblue;
+  padding: 0.5rem;
+}
+
+td {
+  background-color: aliceblue;
+  border-collapse: collapse;
+  width: 25%;
+  padding: 1rem 2.5rem 1rem 2rem;
+}
+
+tr {
+  padding: 10rem;
+  width: 100%;
+}
+
+.tabelle {
+  margin: 3rem 14rem 3rem 14rem;
+}
+
+/*******************************************/
+
+.section-video {
+  background-color: rgba(0, 125, 250, 0.06);
+  margin-top: 5rem;
+  padding: 2rem 5rem 2rem 10rem;
+}
+
+/********************************************/
+
+@media screen {
+}
+
+/********************************************/
+
+.footer {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "address"
+    "fundraiser"
+    "navigation"
+    "bootcamp";
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+  color: var(--tx-white);
+  background-color: var(--c-bg-footer);
+  padding-bottom: 7.625rem;
+}
+
+.footer__heading {
+  font-weight: 700;
+  font-size: inherit;
+}
+
+.footer__line {
+  width: 80%;
+  max-width: 20rem;
+}
+
+.footer__line--small {
+  width: 80%;
+  max-width: 2.438rem;
+}
+/*** address details ***/
+
+.footer-address-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: address;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 3.5rem;
+}
+
+.footer-address-wrapper > address {
+  font-style: normal;
+}
+
+.footer__social-media {
+  text-align: center;
+}
+
+.social-media__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 1.5rem 0;
+  gap: 1.688rem;
+}
+
+.social-media__icon:hover,
+.social-media__icon:active {
+  transform: scale(1.2);
+  transition: 0.1s ease-in-out;
+}
+
+.footer__adress {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer__contact {
+  text-align: center;
+  margin-bottom: 3.25rem;
+}
+
+.footer__link {
+  color: var(--tx-white);
+  text-decoration: none;
+}
+
+/*** fundraiser ***/
+
+.footer__fundraiser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: fundraiser;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 1.813rem;
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__fundraiser-logo {
+  margin-top: 0.5rem;
+  margin-bottom: 2.313rem;
+}
+
+.footer__fundraiser-button {
+  margin-bottom: 1rem;
+}
+
+.footer__fundraiser-gala {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--tx-white);
+  font-weight: 600;
+  margin-bottom: 1.438rem;
+}
+
+/*** navigation ***/
+
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: navigation;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 2.813rem;
+}
+
+.footer__navigation-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.footer__navigation-link {
+  text-decoration: none;
+  color: var(--tx-white);
+}
+
+.footer__navigation-link:hover,
+.footer__navigation-link:active {
+  transform: scale(1.2);
+  transition: 0.1s ease-in-out;
+}
+
+/*** bootcamp ***/
+
+.footer__bootcamp {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  grid-area: bootcamp;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 2.875rem;
+}
+
+.footer__attendees-text {
+  max-width: 16.875rem;
+  text-align: center;
+  margin-top: 1.438rem;
+}
+
+.footer__attendees--modifier {
+  font-weight: 600;
+}
+
+.footer__heart {
+  margin: 1rem 0;
+}
+
+.footer__development {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 1.625rem;
+  row-gap: 0.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.875rem;
+}
+
+.footer__devs--left {
+  justify-self: end;
+}
+
+.footer__devs--right {
+  justify-self: start;
+}
+
+.footer__development-link {
+  text-decoration: none;
+  color: var(--tx-white);
+}
+
+.footer__design {
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "bootcamp navigation fundraiser address";
+    justify-items: start;
+    align-items: start;
+    padding: 3.875rem 5rem 2.063rem 7.188rem;
+    font-size: 1rem;
+  }
+
+  .footer__line {
+    display: none;
+  }
+
+  .footer__line--small {
+    display: none;
+  }
+
+  .footer__attendees {
+    width: 20ch;
+    margin-top: 0.8rem;
+  }
+
+  .footer__navigation {
+    grid-area: navigation;
+    justify-self: start;
+    align-self: start;
+    font-size: 0.875rem;
+    margin: 0;
+  }
+
+  .footer__navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.563rem;
+  }
+
+  .footer__fundraiser {
+    align-self: start;
+    margin: 0;
+  }
+
+  .footer__logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 18.75rem;
+    max-width: fit-content;
+  }
+
+  .footer-address-wrapper {
+    grid-area: address;
+    justify-self: start;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 1.563rem;
+    font-style: normal;
+    margin: 0;
+  }
+
+  .footer-address-wrapper > address {
+    font-style: normal;
+  }
+
+  .social-media__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0.5rem 0;
+    gap: 1.688rem;
+  }
+
+  .social-media__list > * :hover {
+    transform: scale(1.3);
+    transition: 0.1s;
+  }
+
+  .footer__link {
+    color: var(--tx-white);
+    text-decoration: none;
+  }
+
+  .footer__link:hover {
+    text-decoration: underline;
+  }
+
+  .footer__bootcamp {
+    grid-area: bootcamp;
+    justify-self: start;
+    align-self: start;
+    margin-top: 0;
+  }
+}
