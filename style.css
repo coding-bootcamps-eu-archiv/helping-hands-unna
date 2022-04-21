@@ -35,22 +35,10 @@ body {
   --bg-yellow: rgba(255, 255, 0, 0.17);
   --bg-yellow-secondary: rgba(255, 255, 0, 0.41);
   --bg-black: #343434;
-  --bg-nav-blue: rgba(0, 125, 250, 0.87);
+  --bg-nav-blue: rgba(0, 125, 250);
 
   --c-btn-blue: #007dfa;
   --c-btn-white: #fffafa;
-}
-
-/********************************************************/
-/*** helper classes ***/
-
-.content-flex-center {
-  display: flex;
-  justify-content: center;
-}
-
-.content-width-max {
-  max-width: 90rem;
 }
 
 /***************** btn style/ link Spendengala **********************/
@@ -92,7 +80,7 @@ body {
 /*** header and navigation***/
 
 .header {
-  background-color: var(--c-bg-header);
+  background-color: var(--bg-nav-blue);
   position: sticky;
   top: 0;
   z-index: 2;
@@ -121,7 +109,7 @@ body {
 }
 
 .nav-link {
-  color: #2f2b2f;
+  color: var(--tx-white);
   text-decoration: none;
   transition: 0.7s ease;
 }
@@ -151,7 +139,7 @@ body {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #2f2b2f;
+  background-color: var(--tx-white);
 }
 
 /*** media query for header and navigation ***/
@@ -179,7 +167,7 @@ body {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: var(--c-bg-header);
+    background-color: var(--bg-nav-blue);
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -242,7 +230,7 @@ body {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "text" "heading" "button";
-  background-color: #797979;
+  background-color: var(--bg-nav-blue);
   max-width: 25rem;
   padding: 1.563rem 1.625rem 2rem 2.313rem;
   margin-bottom: 2.563rem;
@@ -275,12 +263,14 @@ body {
 
   .home-page__content-section {
     min-height: calc(100vh - 5rem);
-    background-color: #f8f5f5;
     display: flex;
     justify-content: center;
     margin: 0;
   }
 
+  .hp-bg--yellow {
+    background-color: var(--bg-yellow);
+  }
   .hero-section {
     max-height: 52.938rem;
     height: inherit;
@@ -471,7 +461,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 85vh;
-    background-color: #f8f5f5;
+    background-color: transparent;
     margin-top: 2rem;
     padding-top: 4.813rem;
     gap: 2rem;
@@ -500,7 +490,7 @@ body {
   }
 
   .gala-text__dates-container {
-    background-color: #2f2b2f;
+    background-color: var(--tx-black);
     padding-left: 2rem;
     max-height: 3.188rem;
     max-width: 37.5rem;
@@ -509,7 +499,7 @@ body {
 
   .gala-text__dates {
     font-size: 1.25rem;
-    color: white;
+    color: var(--tx-white);
     display: inline-block;
     padding: 0.75rem 2.125rem 0.75rem 0;
   }
@@ -793,18 +783,19 @@ body {
   .footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    _grid-template-rows: repeat(4, auto);
-    background-color: var(--c-bg-footer);
-    color: var(--c-footer);
+    grid-template-areas: "bootcamp navigation fundraiser address";
+    justify-items: start;
+    align-items: start;
     padding: 3.875rem 5rem 2.063rem 7.188rem;
-  }
-
-  .footer__heading {
     font-size: 1rem;
   }
 
-  .footer__bootcamp .footer__heading {
-    width: 14ch;
+  .footer__line {
+    display: none;
+  }
+
+  .footer__line--small {
+    display: none;
   }
 
   .footer__attendees {
@@ -812,10 +803,12 @@ body {
     margin-top: 0.8rem;
   }
 
-  .footer-navigation {
+  .footer__navigation {
     grid-area: navigation;
     justify-self: start;
+    align-self: start;
     font-size: 0.875rem;
+    margin: 0;
   }
 
   .footer__navigation-list {
@@ -823,6 +816,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.563rem;
+  }
+
+  .footer__fundraiser {
+    align-self: start;
+    margin: 0;
   }
 
   .footer__logo-wrapper {
@@ -834,13 +832,15 @@ body {
     max-width: fit-content;
   }
 
-  _.footer-address-wrapper {
+  .footer-address-wrapper {
     grid-area: address;
-    justify-self: end;
+    justify-self: start;
+    align-self: start;
     display: flex;
     flex-direction: column;
     gap: 1.563rem;
     font-style: normal;
+    margin: 0;
   }
 
   .footer-address-wrapper > address {
@@ -861,7 +861,7 @@ body {
   }
 
   .footer__link {
-    color: #2f2b2f;
+    color: var(--tx-white);
     text-decoration: none;
   }
 
@@ -869,9 +869,10 @@ body {
     text-decoration: underline;
   }
 
-  _.footer__bootcamp {
-    _grid-area: attendees;
-    justify-self: center;
-    _margin-top: 2.188rem;
+  .footer__bootcamp {
+    grid-area: bootcamp;
+    justify-self: start;
+    align-self: start;
+    margin-top: 0;
   }
 }
