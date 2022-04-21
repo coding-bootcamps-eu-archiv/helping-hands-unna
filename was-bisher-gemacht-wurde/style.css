@@ -74,11 +74,7 @@ body {
 
 /************************************/
 
-li {
-  list-style: none;
-}
-
-h2 {
+.h2-banner {
   margin: 0;
 }
 
