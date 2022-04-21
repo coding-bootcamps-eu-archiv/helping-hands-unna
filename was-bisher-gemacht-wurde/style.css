@@ -92,10 +92,6 @@ h2 {
   padding: 0.5rem 0rem 0.5rem 15rem;
 }
 
-h2:nth-child(1) {
-  font-size: 30px;
-}
-
 .div-flex {
   display: flex;
   flex-direction: row;
@@ -136,11 +132,6 @@ h2:nth-child(1) {
   padding: 0.5rem 12rem 0.5rem 3rem;
 }
 
-h2:nth-child(2) {
-  font-size: 10px;
-  color: red;
-}
-
 table {
   border-spacing: 10px;
   table-layout: auto;
@@ -175,6 +166,11 @@ tr {
   background-color: rgba(0, 125, 250, 0.06);
   margin-top: 5rem;
   padding: 2rem 5rem 2rem 10rem;
+}
+
+/********************************************/
+
+@media screen {
 }
 
 /********************************************/
