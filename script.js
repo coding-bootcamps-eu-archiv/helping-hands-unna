@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+/****** nav bar  ******/
+
+=======
+>>>>>>> 39bf799b9e844de2adb14f46181ce96aff784179
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-link");
@@ -13,3 +18,8 @@ navLinks.forEach((navLink) =>
     navMenu.classList.remove("active");
   })
 );
+<<<<<<< HEAD
+
+/*** nav bar end ***/
+=======
+>>>>>>> 39bf799b9e844de2adb14f46181ce96aff784179

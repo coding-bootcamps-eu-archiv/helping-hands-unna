@@ -24,7 +24,6 @@ body {
 /*** colors & fontweight***/
 
 :root {
-  
   --c-bg-header: rgba(0, 125, 250, 0.87);
 
   --c-btn-white: #fffafa;
@@ -185,6 +184,199 @@ body {
   }
 }
 
+/** About Page Styling **/
+
+.au_content {
+  margin: 0 auto;
+  max-width: 90rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.au_white_background {
+  background-color: var(--bg-white);
+}
+
+.au_blue_background {
+  background-color: var(--bg-blue);
+}
+/** font style **/
+
+.au_content__header {
+  font-weight: 700;
+  font-size: 3.4rem;
+  margin: 0;
+}
+
+.au_content__subheader {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.au_content__para {
+  font-weight: 400;
+  font-size: 1rem;
+  padding-top: 3rem;
+  flex: 1;
+}
+
+/** Grid and Flex **/
+
+.au_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.au_article_wrapper {
+  width: 100%;
+}
+
+.au_text__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 4rem;
+  max-width: fit-content;
+}
+
+.au_text__section__flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.au_img__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.au_img__section_small {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  gap: 2rem;
+}
+.au_header__wrapper {
+  padding-left: 4rem;
+  padding-top: 3rem;
+}
+.au_flexbox {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.au_certificate_content {
+  display: grid;
+  justify-content: center;
+}
+
+/** Image Style **/
+
+.au_certificate__img {
+  max-width: 30rem;
+  max-height: 36rem;
+}
+
+.au_mobile_img {
+  display: none;
+}
+
+/** Button Style **/
+.button__container {
+  position: absolute;
+  right: 10rem;
+}
+
+.btn_style {
+  background-color: transparent;
+  color: var(--c-btn);
+  border: 2px solid var(--c-btn);
+  border-radius: 2px;
+  padding: 0.5rem;
+  width: 8rem;
+  max-height: 2.5rem;
+}
+
+.btn_style:hover {
+  color: white;
+  background-color: #007dfa;
+}
+
+/** Media Query **/
+
+@media only screen and (max-width: 768px) {
+  .au_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .au_img__section {
+    display: none;
+  }
+  .au_img__section_small {
+    display: none;
+  }
+  .au_mobile_img {
+    display: block;
+  }
+  .au_certificate_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .au_certificate_preview {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .au_content__para {
+    font-size: 0.8rem;
+  }
+  .au_content__header {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .au_content__subheader {
+    font-size: 1rem;
+  }
+  .au_content__para {
+    padding: 1.5rem;
+  }
+  .au_text__section {
+    padding-left: 0;
+  }
+  .au_header__wrapper {
+    padding-top: 3rem;
+    padding-left: 0;
+  }
+}
+
+/** About Page Styling End **/
+/*
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+*/
 /********************************************************/
 /*** hero section ***/
 
@@ -225,7 +417,6 @@ body {
   margin-bottom: 1rem;
   line-height: 1rem;
 }
-
 
 .hero-section__image {
   display: none;
@@ -573,7 +764,7 @@ body {
   .gala-text__description {
     margin-left: 7.188rem;
   }
-    
+}
 /***************** btn style/ link Spendengala **********************/
 
 .btn_style {
