@@ -15,13 +15,22 @@ body {
 
 :root {
   --c-bg-header: lightgrey;
-
+  --c-bg-footer: #343434;
+  --c-footer: #ffffff;
   --fw-nav-items: 600;
+  --bg-white: #fffafa;
+  --bg-blue: rgba(0, 125, 250, 0.06);
+  --bg-yellow: rgba(255, 255, 0, 0.17);
+  --bg-yellow-secondary: rgba(255, 255, 0, 0.41);
+  --bg-black: #343434;
+  --bg-nav-blue: rgba(0, 125, 250, 0.87);
 }
 
 .header {
   background-color: var(--c-bg-header);
-  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .navigation {
@@ -63,14 +72,28 @@ body {
   height: 1rem;
 }
 
+/************************************/
+
 li {
   list-style: none;
 }
 
-main {
-  width: 80%;
-  margin-right: 6rem;
-  margin-left: 6rem;
+h2 {
+  margin: 0;
+}
+
+.first-section {
+  padding-bottom: 2rem;
+}
+
+.first-banner {
+  background-color: var(--bg-yellow-secondary);
+  margin: 2rem 27rem 2rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 15rem;
+}
+
+h2:nth-child(1) {
+  font-size: 30px;
 }
 
 .div-flex {
@@ -82,37 +105,74 @@ main {
 }
 
 .div-summe {
-  margin: 2rem;
-  background-color: #ffe6cc;
-  width: 15%;
+  margin: 1rem;
+  background-color: var(--bg-blue);
+  width: 20%;
+  padding: 2rem;
+  box-shadow: 0px 5px 5px lightblue;
 }
 
 .div-personen {
-  margin: 2rem;
-  background-color: #ffe6cc;
-  width: 15%;
+  margin: 1rem;
+  background-color: var(--bg-blue);
+  width: 20%;
+  padding: 2rem;
+  box-shadow: 0px 5px 5px lightblue;
 }
 
 .div-lieferungen {
-  margin: 2rem;
-  background-color: #ffe6cc;
-  width: 15%;
+  margin: 1rem;
+  background-color: var(--bg-blue);
+  width: 20%;
+  padding: 2rem;
+  box-shadow: 0px 5px 5px lightblue;
+}
+
+/************************************/
+
+.second-banner {
+  background-color: var(--bg-yellow-secondary);
+  margin: 2rem 0rem 2rem 14rem;
+  padding: 0.5rem 12rem 0.5rem 3rem;
+}
+
+h2:nth-child(2) {
+  font-size: 10px;
+  color: red;
 }
 
 table {
   border-spacing: 10px;
+  table-layout: auto;
+  text-align: center;
+  width: 100%;
 }
 
 th {
   background-color: aliceblue;
+  padding: 0.5rem;
 }
 
 td {
   background-color: aliceblue;
   border-collapse: collapse;
+  width: 25%;
+  padding: 1rem 2.5rem 1rem 2rem;
 }
 
-td,
-th {
-  padding: 10px;
+tr {
+  padding: 10rem;
+  width: 100%;
+}
+
+.tabelle {
+  margin: 3rem 14rem 3rem 14rem;
+}
+
+/*******************************************/
+
+.section-video {
+  background-color: rgba(0, 125, 250, 0.06);
+  margin-top: 5rem;
+  padding: 2rem 5rem 2rem 10rem;
 }
