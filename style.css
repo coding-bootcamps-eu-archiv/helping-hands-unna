@@ -43,7 +43,7 @@ body {
 /*** header and navigation***/
 
 .header {
-  background-color: var(--c-bg-header);
+  background-color: var(--bg-nav-blue);
 }
 
 .navigation__logo {
