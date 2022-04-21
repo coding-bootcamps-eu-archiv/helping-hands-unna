@@ -57,7 +57,7 @@
                     <div class="hero-section__campaign">
                         <p class="campaign__overline">Aktuelle Spendenaktion</p>
                         <h2 class="campaign__heading">"UNNA 60.000"</h2>
-                        <button class="button campaign__button">jetzt spenden</button>
+                        <button class="btn_style--white campaign__button">jetzt spenden</button>
                     </div>
                 </div>
             </div>
@@ -73,6 +73,7 @@
                         <p class="gala-text__dates"><span class="gala-text--bold">Wann:</span> 13.Mai 2022</p>
                         <p class="gala-text__dates"><span class="gala-text--bold">Uhrzeit:</span>19:00 Uhr</p>
                     </div>
+                    <img class="gala-image-mobile" src="./img/filler-gala-horizontal-medium.png" alt="">
                     <p class="gala-text__location"><span class="gala-text--bold">Location:</span> Neue Schmiede</p>
                     <small class="gala-text__location-details">Neue Schmiede | Hellweg 31-33 | 59423 Unna</small>
                     <p class="gala-text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
@@ -91,32 +92,7 @@
     </main>
 
     <footer class="footer">
-        <!----------------| attendee info |---------------->
-        <section class="footer__bootcamp">
-            <h3 class="footer__heading">Unterstützung & Abschlußprojekt</h3>
-            <p class="footer__attendees">Mit freundlicher Unterstützung der <span
-                    class="footer__attendees--modifier">Attendees</span>
-                des Coding Bootcamps Europe.
-            </p>
-        </section>
-        <!----------------| navigation |---------------->
-        <nav class="footer__navigation">
-            <h3 class="footer-navigation__heading">Weitere Informationen:</h3>
-            <ul class="footer__navigation-list">
-                <li>Datenschutz</li>
-                <li>Impressum</li>
-                <li>Cookie-Einstellungen</li>
-            </ul>
-        </nav>
-        <!----------------| fundraiser section |---------------->
-        <section class="footer__fundraiser">
-            <h3 class="footer__heading">Aktuelle Spendenaktion</h3>
-            <div class="footer__logo-wrapper">
-                <img src="./img/unna-logo-bw.svg" alt="" class="footer__fundraiser-logo">
-                <button class="button">jetzt spenden</button>
-                <a href="#">Spendengala</a>
-            </div>
-        </section>
+
         <!----------------| address section |---------------->
         <div class="footer-address-wrapper">
             <!--- social media --->
@@ -124,16 +100,17 @@
                 <h3 class="footer__heading">Social Media</h3>
                 <ul class="social-media__list">
                     <li>
-                        <img src="./img/facebook-logo.svg" alt="facebook">
+                        <img src="./img/facebook-logo.svg" alt="facebook" class="social-media__icon">
                     </li>
                     <li>
-                        <img src="./img/instagram-logo.svg" alt="instagram">
+                        <img src="./img/instagram-logo.svg" alt="instagram" class="social-media__icon">
                     </li>
                     <li>
-                        <img src="./img/twitter-logo.svg" alt="twitter">
+                        <img src="./img/twitter-logo.svg" alt="twitter" class="social-media__icon">
                     </li>
                 </ul>
             </address>
+
             <!--- organisation address --->
             <address class="footer__adress">
                 <h3 class="footer__heading">Adresse:</h3>
@@ -141,6 +118,7 @@
                 Hertingerstraße 80<br>
                 59423 Unna<br>
             </address>
+
             <!--- contact data --->
             <address class="footer__contact">
                 <h3 class="footer__heading">Kontakt:</h3>
@@ -148,7 +126,49 @@
                 Mail: <a class="footer__link" href="mailto:arne@ukrainehilfe-unna.de">arne@ukrainehilfe-unna.de</a><br>
                 Tel.: <a class="footer__link" href="tel:+491774003004">+49 177 400 3004</a><br>
             </address>
+            <hr class="footer__line">
         </div>
+
+        <!----------------| fundraiser section |---------------->
+        <section class="footer__fundraiser">
+            <h3 class="footer__heading">Aktuelle Spendenaktion</h3>
+            <div class="footer__logo-wrapper">
+                <img src="./img/unna-logo-bw.svg" alt="" class="footer__fundraiser-logo">
+                <button class="btn_style--white footer__fundraiser-button">jetzt spenden</button>
+                <a href="#" class="footer__fundraiser-gala">Spendengala</a>
+            </div>
+            <hr class="footer__line">
+        </section>
+
+        <!----------------| navigation |---------------->
+        <nav class="footer__navigation">
+            <h3 class="footer__heading">Weitere Informationen:</h3>
+            <ul class="footer__navigation-list">
+                <li><a href="#" class="footer__navigation-link">Datenschutz</a></li>
+                <li><a href="#" class="footer__navigation-link">Impressum</a></li>
+            </ul>
+            <hr class="footer__line--small">
+        </nav>
+
+        <!----------------| attendee info |---------------->
+        <section class="footer__bootcamp">
+            <h3 class="footer__heading">Abschlussprojekt</h3>
+            <p class="footer__attendees-text">Made with the friendly cooperation of the <span
+                    class="footer__attendees--modifier">Attendees</span> of the Coding Bootcamps Europe.
+            </p>
+            <p class="footer__heart">&#9825;</p>
+            <h3 class="footer__heading">Development</h3>
+            <div class="footer__development">
+                <a href="" class="footer__development-link laura footer__devs--left">Laura Hohlsiepe</a>
+                <a href="" class="footer__development-link bianca footer__devs--right">Bianca Raedler</a>
+                <a href="" class="footer__development-link tobias footer__devs--left">Tobias Sindek</a>
+                <a href="" class="footer__development-link selman footer__devs--right">Selman Ciftci</a>
+            </div>
+            <h3 class="footer__heading">User Interface Design</h3>
+            <div class="footer__design">
+                <a href="" class="footer__development-link">Patricia Prager</a>
+            </div>
+        </section>
     </footer>
 
     <script src="script.js"></script>
