@@ -13,5 +13,3 @@ navLinks.forEach((navLink) =>
     navMenu.classList.remove("active");
   })
 );
-
-/*************** direkt Spendenseite **********************/
