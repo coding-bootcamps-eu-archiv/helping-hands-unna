@@ -32,9 +32,9 @@
     </header>
     <main>
       <section class="first-section">
-        <div class ="first-banner">
-        Erreichtes
-        <h2>Was haben wir bisher erreicht?</h2>
+        <div class="first-banner">
+          Erreichtes
+          <h2>Was haben wir bisher erreicht?</h2>
         </div>
         <div class="div-flex">
           <div class="div-summe">
@@ -56,11 +56,13 @@
       </section>
       <section class="section-tabelle">
         <div class="second-banner">
-        <h2>Das hier haben wir bis zu diesem Zeitpunkt von Euren Spenden gekauft</h2>
-         </div>
-          <div class="tabelle">
-            <table id="tabelle">
-              <tr>
+          <h2>
+            Das hier haben wir bis zu diesem Zeitpunkt von Euren Spenden gekauft
+          </h2>
+        </div>
+        <div class="tabelle">
+          <table id="tabelle">
+            <tr>
               <th>BESCHREIBUNG</th>
               <th>PREIS</th>
               <th>ANZAHL</th>
@@ -77,10 +79,8 @@
             
     </tr>
   -->
-            </table>
-          </div>
-          
-
+          </table>
+        </div>
       </section>
       <section class="section-video">
         <div class="div-video">
@@ -89,41 +89,125 @@
           (eingefügtes Video)
         </div>
       </section>
-      <div class="footer-address-wrapper">
-        <address class="footer__social-media">
+
+      <footer class="footer">
+        <!----------------| address section |---------------->
+        <div class="footer-address-wrapper">
+          <!--- social media --->
+          <address class="footer__social-media">
             <h3 class="footer__heading">Social Media</h3>
             <ul class="social-media__list">
-                <li>
-                    <img src="./img/facebook-logo.svg" alt="facebook">
-                </li>
-                <li>
-                    <img src="./img/instagram-logo.svg" alt="instagram">
-                </li>
-                <li>
-                    <img src="./img/twitter-logo.svg" alt="twitter">
-                </li>
+              <li>
+                <img
+                  src="./img/facebook-logo.svg"
+                  alt="facebook"
+                  class="social-media__icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/instagram-logo.svg"
+                  alt="instagram"
+                  class="social-media__icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/twitter-logo.svg"
+                  alt="twitter"
+                  class="social-media__icon"
+                />
+              </li>
             </ul>
-        </address>
-        <address class="footer__adress">
-            <h3 class="footer__heading">Adresse:</h3>
-            Helping Hands Unna e.V.<br>
-            Hertingerstraße 80<br>
-            59423 Unna<br>
-        </address>
-        <address class="footer__contact">
-            <h3 class="footer__heading">Kontakt:</h3>
-            Arne Schulte-Altedorneburg <br>
-            Mail: <a class="footer__link" href="mailto:arne@ukrainehilfe-unna.de">arne@ukrainehilfe-unna.de</a><br>
-            Tel.: <a class="footer__link" href="tel:+491774003004">+49 177 400 3004</a><br>
-        </address>
-        <button class="button">jetzt spenden</button>
-    </div>
-    <p class="footer__bootcamp">Mit herzlicher Unterstützung der <span class="footer__attendees">Attendees</span>
-        des Coding Bootcamps Europe.
-    </p>
-</footer>
-    </main> 
-    <script src="script.js"></script>
-  </body> 
+          </address>
 
+          <!--- organisation address --->
+          <address class="footer__adress">
+            <h3 class="footer__heading">Adresse:</h3>
+            Helping Hands Unna e.V.<br />
+            Hertingerstraße 80<br />
+            59423 Unna<br />
+          </address>
+
+          <!--- contact data --->
+          <address class="footer__contact">
+            <h3 class="footer__heading">Kontakt:</h3>
+            Arne Schulte-Altedorneburg <br />
+            Mail:
+            <a class="footer__link" href="mailto:arne@ukrainehilfe-unna.de"
+              >arne@ukrainehilfe-unna.de</a
+            ><br />
+            Tel.:
+            <a class="footer__link" href="tel:+491774003004">+49 177 400 3004</a
+            ><br />
+          </address>
+          <hr class="footer__line" />
+        </div>
+
+        <!----------------| fundraiser section |---------------->
+        <section class="footer__fundraiser">
+          <h3 class="footer__heading">Aktuelle Spendenaktion</h3>
+          <div class="footer__logo-wrapper">
+            <img
+              src="./img/unna-logo-bw.svg"
+              alt=""
+              class="footer__fundraiser-logo"
+            />
+            <button class="btn_style--white footer__fundraiser-button">
+              jetzt spenden
+            </button>
+            <a href="#" class="footer__fundraiser-gala">Spendengala</a>
+          </div>
+          <hr class="footer__line" />
+        </section>
+
+        <!----------------| navigation |---------------->
+        <nav class="footer__navigation">
+          <h3 class="footer__heading">Weitere Informationen:</h3>
+          <ul class="footer__navigation-list">
+            <li><a href="#" class="footer__navigation-link">Datenschutz</a></li>
+            <li><a href="#" class="footer__navigation-link">Impressum</a></li>
+          </ul>
+          <hr class="footer__line--small" />
+        </nav>
+
+        <!----------------| attendee info |---------------->
+        <section class="footer__bootcamp">
+          <h3 class="footer__heading">Abschlussprojekt</h3>
+          <p class="footer__attendees-text">
+            Made with the friendly cooperation of the
+            <span class="footer__attendees--modifier">Attendees</span> of the
+            Coding Bootcamps Europe.
+          </p>
+          <p class="footer__heart">&#9825;</p>
+          <h3 class="footer__heading">Development</h3>
+          <div class="footer__development">
+            <a href="" class="footer__development-link laura footer__devs--left"
+              >Laura Hohlsiepe</a
+            >
+            <a
+              href=""
+              class="footer__development-link bianca footer__devs--right"
+              >Bianca Raedler</a
+            >
+            <a
+              href=""
+              class="footer__development-link tobias footer__devs--left"
+              >Tobias Sindek</a
+            >
+            <a
+              href=""
+              class="footer__development-link selman footer__devs--right"
+              >Selman Ciftci</a
+            >
+          </div>
+          <h3 class="footer__heading">User Interface Design</h3>
+          <div class="footer__design">
+            <a href="" class="footer__development-link">Patricia Prager</a>
+          </div>
+        </section>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
