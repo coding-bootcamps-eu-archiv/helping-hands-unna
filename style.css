@@ -22,6 +22,7 @@ body {
 /*** colors & fontweight***/
 
 :root {
+  --c-bg-header: lightgrey;
   --bg-blue: rgba(0, 125, 250, 0.06);
   --bg-white: #fffafa;
   --bg-black: #343434;
@@ -29,10 +30,9 @@ body {
   --tx-black: #0b0a0b;
   --tx-white: #fffafa;
 
-  --c-btn: #007dfa;
-  --c-btn-white: #fffafa;
-
   --bg-nav-blue: rgba(0, 125, 250, 0.87);
+
+  --c-btn: #007dfa;
 
   --fw-nav-items: 600;
 }
@@ -145,7 +145,7 @@ body {
 /** About Page Styling **/
 
 .content {
-  max-height: 40rem;
+  max-width: 90rem;
 }
 
 li {
@@ -153,11 +153,11 @@ li {
 }
 
 .white_background {
-  background-color: var(--w-bg-color);
+  background-color: var(--bg-white);
 }
 
 .blue_background {
-  background-color: var(--b-bg-color);
+  background-color: var(--bg-blue);
 }
 /** font style **/
 
@@ -182,6 +182,8 @@ li {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .text__section {
@@ -193,25 +195,43 @@ li {
 
 .text__section__flexbox {
   display: flex;
-  gap: 10rem;
-  padding-bottom: 4rem;
+  flex-direction: column;
 }
 
 .img__section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .img__section_small {
   display: grid;
-  grid-template-columns: 20% 20%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   justify-content: center;
+  gap: 2rem;
+}
+.header__wrapper {
+  padding-left: 4rem;
+}
+.flexbox {
+  display: flex;
+  justify-content: center;
+  padding-left: 4rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.certificate_content {
+  display: grid;
+  justify-content: center;
+}
+
+/** Image Style **/
+
+.certificate__img {
+  max-width: 30rem;
+  max-height: 36rem;
 }
 
 /** Button Style **/
@@ -227,6 +247,7 @@ li {
   border-radius: 2px;
   padding: 0.5rem;
   width: 8rem;
+  max-height: 2.5rem;
 }
 
 .btn_style:hover {
