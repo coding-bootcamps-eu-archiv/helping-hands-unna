@@ -340,6 +340,18 @@ tr {
   .tabelle {
     margin: 2rem 0rem 0rem 0rem;
   }
+
+  /* Section Video */
+
+  .section-video {
+    background-color: white;
+    margin-top: 5rem;
+    padding: 2rem 0rem 6rem 1rem;
+  }
+
+  .h3-video {
+    margin: 0;
+  }
 }
 
 /********************************************/
