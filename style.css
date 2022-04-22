@@ -443,6 +443,7 @@ About
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "text" "heading" "button";
   background-color: var(--bg-nav-blue);
+  color: var(--tx-white);
   max-width: 25rem;
   padding: 1.563rem 1.625rem 2rem 2.313rem;
   margin-bottom: 2.563rem;
@@ -594,12 +595,70 @@ About
 }
 
 /********************************************************/
+/*** packages section ***/
+
+.packages-section {
+  padding: 3.5rem 2rem 3.75rem 2rem;
+  height: fit-content;
+}
+
+.packages__heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.packages__text {
+  font-size: 0.75rem;
+  margin-bottom: 2.688rem;
+}
+
+.packages__image--mobile {
+  width: 100%;
+  max-width: 24.375rem;
+  height: 100%;
+}
+
+.packages__image {
+  display: none;
+}
+
+.hp-bg--blue {
+  background-color: var(--bg-blue);
+}
+
+@media screen and (min-width: 768px) {
+  .packages-section {
+    padding: 3.5rem 7.813rem 3.75rem 7.438rem;
+    width: auto;
+  }
+
+  .packages__heading {
+    font-size: 2.625rem;
+  }
+
+  .packages__text {
+    font-size: 1.5rem;
+  }
+
+  .packages__image--mobile {
+    display: none;
+  }
+
+  .packages__image {
+    display: block;
+    width: 100%;
+    max-width: 68.625rem;
+    height: 100%;
+  }
+}
+
+/********************************************************/
 /*** gala section ***/
 
 .gala-section {
   padding-top: 2.813rem;
-  margin-bottom: 14.313rem;
-  background-color: #f8f5f5;
+  background-color: var(--bg-yellow);
   height: 70rem;
 }
 
@@ -620,7 +679,7 @@ About
 }
 
 .gala-text__dates-container {
-  background-color: #2f2b2f;
+  background-color: var(--bg-black);
   padding-left: 2.688rem;
   max-height: 3.188rem;
   max-width: 19.938rem;
@@ -640,7 +699,6 @@ About
 
 .gala-image-mobile {
   max-width: 100%;
-  border: 0.5rem solid var(--bg-white);
 }
 
 .gala-text__location {
@@ -666,6 +724,8 @@ About
 
 .gala-image-one {
   display: none;
+  border: 0.5rem solid var(--bg-white);
+  padding-right: 2rem;
 }
 
 @media screen and (min-width: 768px) {
