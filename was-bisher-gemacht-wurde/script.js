@@ -13,7 +13,6 @@ function getData() {
 }
 
 function showData(dataObject) {
-  console.log(Object.keys(dataObject.data).length);
   for (let i = 0; i < Object.keys(dataObject.data).length; i++) {
     let itemRow = document.createElement("tr");
     // Beschreibung

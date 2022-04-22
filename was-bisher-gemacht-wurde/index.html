@@ -13,21 +13,34 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navigation">
-        <img
-          class="navigation__logo"
-          src="./img/helping-hands-logo.png"
-          alt="Helping Hands Logo"
-        />
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__home-button">
-            <img src="./img/home-icon.png" alt="" />
+      <nav class="navbar">
+        <a href="#" class="nav-branding"
+          ><img
+            class="navigation__logo"
+            src="./img/helping-hands-logo.png"
+            alt="Helping Hands Logo"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">aktuelle Spendenaktion</a>
           </li>
-          <li class="navigation__item">aktuelle Spendenaktion</li>
-          <li class="navigation__item">Über Uns</li>
-          <li class="navigation__item">Erreichtes</li>
-          <li class="navigation__item">direkt Spenden</li>
+          <li class="nav-item">
+            <a href="../about-us/index.html" class="nav-link">Über Uns</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Erreichtes</a>
+          </li>
+          <li class="nav-item">
+            <a href="../spendenseite/index.html" class="nav-link"
+              >direkt Spenden</a
+            >
+          </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
     <main>
@@ -84,9 +97,8 @@
       </section>
       <section class="section-video">
         <div class="div-video">
-          <h3>Was bisher getan wurde</h3>
-          <p>Video von unseren zweiten Tour</p>
-          (eingefügtes Video)
+          <h3 class="h3-video">Was bisher getan wurde</h3>
+          Video von unseren zweiten Tour (eingefügtes Video)
         </div>
       </section>
 
