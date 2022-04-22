@@ -859,7 +859,7 @@ About
 /************************** direkt spenden seite  ***/
 
 .main_size {
-  max-width: 87.5rem;
+  max-width: 90rem;
 }
 
 .direktspenden_h1 {
@@ -869,6 +869,7 @@ About
   line-height: 4rem;
   padding-left: 10rem;
   color: var(--c-text);
+  margin-top: 5rem;
 }
 
 .infobox_container {
@@ -961,6 +962,7 @@ About
   max-height: 38rem;
   max-width: 35rem;
   margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 .box_logo_unna60 {
@@ -972,6 +974,10 @@ About
   max-width: 32rem;
   max-height: 15rem;
   padding: 2rem;
+}
+
+.maus-unna60 {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
