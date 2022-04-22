@@ -104,7 +104,6 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: clamp(1rem, 4.5vw, 9rem);
-  margin-right: 3rem;
 }
 
 .nav-branding {
@@ -138,7 +137,7 @@ body {
 .navbar {
   min-height: 4.375rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0 1.5rem;
 }

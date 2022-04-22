@@ -24,16 +24,16 @@
                             class="nav__home-button"></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">aktuelle Spendenaktion</a>
+                    <a href="./spendenseite/index.html" class="nav-link">aktuelle Spendenaktion</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Über Uns</a>
+                    <a href="./about-us/index.html" class="nav-link">Über Uns</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Erreichtes</a>
+                    <a href="./was-bisher-gemacht-wurde/index.html" class="nav-link">Erreichtes</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">direkt Spenden</a>
+                    <a href="./spendenseite/index.html" class="nav-link">direkt Spenden</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -62,7 +62,9 @@
                     <div class="hero-section__campaign">
                         <p class="campaign__overline">Aktuelle Spendenaktion</p>
                         <h2 class="campaign__heading">"UNNA 60.000"</h2>
-                        <button class="btn_style--white campaign__button">jetzt spenden</button>
+                        <button class="btn_style--white campaign__button"
+                            onclick="location.href='./spendenseite/index.html'">jetzt
+                            spenden</button>
                     </div>
                 </div>
             </div>
@@ -73,42 +75,46 @@
             <div class="packages-section">
                 <h2 class="packages__heading">Spendenpakete</h2>
                 <p class="packages__text">Was ihr mit euren Spenden erreichen könnt</p>
-                <img src="./img/spendenpakete-unna_mobile.png" alt="Spendenpakete" class="packages__image--mobile">
-                <img src="./img/spendenpakete-unna.png" alt="Spendenpakete" class="packages__image">
+                <img src="./img/spendenpakete-unna_mobile.png" alt="Spendenpakete" class="packages__image--mobile"
+                    onclick="location.href='./spendenseite/index.html'">
+                <img src="./img/spendenpakete-unna.png" alt="Spendenpakete" class="packages__image"
+                    onclick="location.href='./spendenseite/index.html'">
             </div>
         </section>
 
         <!----------------| gala section |---------------->
-        <section class="home-page__content-section hp-bg--yellow">
-            <div class="gala-section">
-                <div class="gala-text">
-                    <p class="gala-text__overline">HÖHEPUNKT</p>
-                    <h2 class="gala-text__heading">SPENDENGALA</h2>
-                    <div class="gala-text__dates-container">
-                        <p class="gala-text__dates">
-                            <span class="gala-text--bold">Wann:</span> 13.Mai 2022
-                        </p>
-                        <p class="gala-text__dates">
-                            <span class="gala-text--bold">Uhrzeit:</span>19:00 Uhr
-                        </p>
-                    </div>
-                    <img class="gala-image-mobile" src="./img/gala-image-table-1.jpeg" alt="Festlicher Tisch" />
-                    <p class="gala-text__location">
-                        <span class="gala-text--bold">Location:</span> Neue Schmiede
+        <a id="#fundraiser">
+            <section class="home-page__content-section hp-bg--yellow">
+        </a>
+        <div class="gala-section">
+            <div class="gala-text">
+                <p class="gala-text__overline">HÖHEPUNKT</p>
+                <h2 class="gala-text__heading">SPENDENGALA</h2>
+                <div class="gala-text__dates-container">
+                    <p class="gala-text__dates">
+                        <span class="gala-text--bold">Wann:</span> 13.Mai 2022
                     </p>
-                    <small class="gala-text__location-details">Neue Schmiede | Hellweg 31-33 | 59423 Unna</small>
-                    <p class="gala-text__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni magnam
-                        sequi ab maxime rem, delectus, assumenda nesciunt minima praesentium
-                        illo dignissimos quo earum quod velit veritatis impedit iure, dolorum
-                        adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Cumque perspiciatis consequatur rem dignissimos quibusdam! Amet natus
-                        soluta nesciunt modi enim vitae nostrum nulla est, sequi aspernatur
-                        commodi minus dicta! Laboriosam!
+                    <p class="gala-text__dates">
+                        <span class="gala-text--bold">Uhrzeit:</span>19:00 Uhr
                     </p>
                 </div>
-                <img class="gala-image-one" src="./img/gala-image-table-1.jpeg" alt="Festlicher Tisch" />
+                <img class="gala-image-mobile" src="./img/gala-image-table-1.jpeg" alt="Festlicher Tisch" />
+                <p class="gala-text__location">
+                    <span class="gala-text--bold">Location:</span> Neue Schmiede
+                </p>
+                <small class="gala-text__location-details">Neue Schmiede | Hellweg 31-33 | 59423 Unna</small>
+                <p class="gala-text__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni magnam
+                    sequi ab maxime rem, delectus, assumenda nesciunt minima praesentium
+                    illo dignissimos quo earum quod velit veritatis impedit iure, dolorum
+                    adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cumque perspiciatis consequatur rem dignissimos quibusdam! Amet natus
+                    soluta nesciunt modi enim vitae nostrum nulla est, sequi aspernatur
+                    commodi minus dicta! Laboriosam!
+                </p>
             </div>
+            <img class="gala-image-one" src="./img/gala-image-table-1.jpeg" alt="Festlicher Tisch" />
+        </div>
         </section>
     </main>
 
@@ -154,11 +160,12 @@
         <section class="footer__fundraiser">
             <h3 class="footer__heading">Aktuelle Spendenaktion</h3>
             <div class="footer__logo-wrapper">
-                <img src="./img/unna-logo-bw.svg" alt="" class="footer__fundraiser-logo" />
-                <button class="btn_style--white footer__fundraiser-button">
+                <img src="./img/unna-logo-bw.svg" alt="" class="footer__fundraiser-logo"
+                    onclick="location.href='./spendenseite/index.html'" />
+                <button class=" btn_style--white footer__fundraiser-button" onclick="location.href='#fundraiser'">
                     jetzt spenden
                 </button>
-                <a href="#" class="footer__fundraiser-gala">Spendengala</a>
+                <a href="#fundraiser" class="footer__fundraiser-gala">Spendengala</a>
             </div>
             <hr class="footer__line" />
         </section>
@@ -184,14 +191,21 @@
             <p class="footer__heart">&#9825;</p>
             <h3 class="footer__heading">Development</h3>
             <div class="footer__development">
-                <a href="" class="footer__development-link laura footer__devs--left">Laura Hohlsiepe</a>
-                <a href="" class="footer__development-link bianca footer__devs--right">Bianca Raedler</a>
-                <a href="" class="footer__development-link tobias footer__devs--left">Tobias Sindek</a>
-                <a href="" class="footer__development-link selman footer__devs--right">Selman Ciftci</a>
+                <a href="https://www.linkedin.com/in/laura-hohlsiepe-72a00620b/" target="_blank"
+                    rel="noopener noreferrer" class="footer__development-link laura footer__devs--left">Laura
+                    Hohlsiepe</a>
+                <a href="https://www.linkedin.com/in/bianca-raedler-12ab0822b/" target="_blank"
+                    rel="noopener noreferrer" class="footer__development-link bianca footer__devs--right">Bianca
+                    Raedler</a>
+                <a href="https://www.linkedin.com/in/tobias-sindek/" target="_blank" rel="noopener noreferrer"
+                    class="footer__development-link tobias footer__devs--left">Tobias Sindek</a>
+                <a href="https://github.com/Yokosumi" target="_blank" rel="noopener noreferrer"
+                    class="footer__development-link selman footer__devs--right">Selman Ciftci</a>
             </div>
             <h3 class="footer__heading">User Interface Design</h3>
             <div class="footer__design">
-                <a href="" class="footer__development-link">Patricia Prager</a>
+                <a href="https://www.linkedin.com/in/patricia-p-51713a1aa/" target="_blank" rel="noopener noreferrer"
+                    class="footer__development-link">Patricia Prager</a>
             </div>
         </section>
     </footer>
