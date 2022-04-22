@@ -92,12 +92,20 @@ body {
   max-height: 3rem;
 }
 
+.navigation__logo:active,
+.navigation__logo:hover {
+  transform: scale(1.15);
+  transition: 0.1s;
+}
+
 .nav-menu {
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: clamp(1rem, 4.5vw, 9rem);
+  _gap: 3.75rem;
+  margin-right: 3rem;
 }
 
 .nav-branding {
@@ -116,9 +124,16 @@ body {
   transition: 0.7s ease;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:active {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.nav__home-button:hover,
+.nav__home-button:active {
+  transform: scale(1.2);
+  transition: 0.1s;
 }
 
 .navbar {
@@ -1235,7 +1250,7 @@ tr {
     grid-template-areas: "bootcamp navigation fundraiser address";
     justify-items: center;
     align-items: center;
-    padding: 3.875rem 3rem 2.063rem 3rem;
+    padding: 6rem 3rem 6rem 3rem;
     font-size: 1rem;
     column-gap: 0.5rem;
   }
