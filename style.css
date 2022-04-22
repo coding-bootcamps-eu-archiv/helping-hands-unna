@@ -278,6 +278,12 @@ li {
 .au_certificate_content {
   display: grid;
   justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.au_padding_bottom {
+  padding-bottom: 1.5rem;
 }
 
 /** Image Style **/
