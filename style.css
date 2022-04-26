@@ -320,7 +320,7 @@ li {
   padding-left: 4rem;
   padding-top: 3rem;
 }
-.au_flexbox {
+.au_wrapper {
   margin: 0 auto;
   display: flex;
   justify-content: center;
