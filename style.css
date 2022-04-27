@@ -885,6 +885,138 @@ About
     margin-left: 7.188rem;
   }
 }
+
+/******************************************************************/
+/****************** -- Current Fundraiser -- **********************/
+
+.cf-content-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 2.25rem;
+  min-height: 80vh;
+}
+
+.cf-bg-blue {
+  background-color: var(--bg-blue);
+}
+
+.cf-temp-button {
+  background-color: transparent;
+  color: var(--c-btn-blue);
+  border: 2px solid var(--c-btn-blue);
+  border-radius: 2px;
+  padding: 0.5rem;
+  width: 8rem;
+}
+
+.cf-temp-button:hover {
+  color: white;
+  background-color: #007dfa;
+}
+
+.style_without_push {
+  text-decoration: none;
+  color: var(--bg-btn);
+}
+
+/*** hero section ***/
+
+.cf-hero-section {
+  max-width: 25.75rem;
+}
+
+.cf-hero__overline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 1.125rem 0;
+}
+
+.cf-hero__logo {
+  max-width: 95%;
+  margin-bottom: 3rem;
+}
+
+.cf-hero__heading {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 1.5rem;
+}
+
+.cf-hero__text {
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.cf-hero__button {
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.cf-hero__gala-link {
+  display: block;
+  margin-left: 2.45rem;
+  text-decoration: none;
+  color: var(--c-btn-blue);
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+/*** ticker section ***/
+
+.cf-ticker-section {
+  max-width: 25.75rem;
+}
+
+.cf-ticker-section__heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 2.688rem;
+  margin-bottom: 1.5rem;
+}
+
+.cf-ticker {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-white);
+  border: 0.156rem solid var(--tx-black);
+  padding: 1.25rem 0 1.75rem 0;
+}
+
+.cf-ticker__heading {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding-bottom: 1.25rem;
+}
+
+.cf-ticker__sub-heading {
+  font-size: 0.75rem;
+}
+
+.cf-ticker__current-sum {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cf-ticker__status-bar {
+  width: 80%;
+  min-height: 1.75rem;
+  border: 0.125rem solid var(--tx-black);
+  margin-top: 0.8rem;
+  background: linear-gradient(
+    90deg,
+    var(--tx-black) var(--ticker-counter),
+    var(--bg-white) var(--ticker-counter)
+  );
+}
+
+.cf-ticker__goal-sum {
+  font-size: 2.625rem;
+}
+
 /***************** btn style/ link Spendengala **********************/
 
 .btn_style {
