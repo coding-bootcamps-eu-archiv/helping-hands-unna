@@ -893,7 +893,6 @@ About
   display: flex;
   justify-content: center;
   padding: 0 2.25rem;
-  min-height: 80vh;
 }
 
 .cf-bg-blue {
@@ -963,10 +962,77 @@ About
   margin-bottom: 3.5rem;
 }
 
+.cf-hero__image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .cf-hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+    gap: 2rem;
+    max-width: 90rem;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .cf-hero__text-section {
+    grid-area: text;
+  }
+
+  .cf-hero__overline {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cf-hero__logo {
+    margin-bottom: 2rem;
+  }
+
+  .cf-hero__heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .cf-hero__text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 35ch;
+  }
+
+  .cf-hero__button {
+    margin-top: 3rem;
+  }
+
+  .cf-hero__image {
+    display: block;
+    grid-area: image;
+    align-self: center;
+    justify-self: start;
+    width: 100%;
+    max-height: 40rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .cf-hero-section {
+    gap: 4rem;
+    margin: 5rem 7rem 12.938rem 12.063rem;
+  }
+
+  .cf-hero__logo {
+    margin-bottom: 4rem;
+  }
+
+  .cf-hero__button {
+    margin-top: 5rem;
+  }
+}
 /*** ticker section ***/
 
 .cf-ticker-section {
   max-width: 25.75rem;
+  padding-bottom: 5.125rem;
 }
 
 .cf-ticker-section__heading {
@@ -1002,7 +1068,7 @@ About
 }
 
 .cf-ticker__status-bar {
-  width: 80%;
+  width: 85%;
   min-height: 1.75rem;
   border: 0.125rem solid var(--tx-black);
   margin-top: 0.8rem;
@@ -1017,9 +1083,48 @@ About
   font-size: 2.625rem;
 }
 
+@media screen and (min-width: 768px) {
+  .cf-ticker-section {
+    max-width: 90rem;
+  }
+
+  .cf-ticker-section__heading {
+    font-size: 3.438rem;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .cf-ticker {
+    margin-bottom: 4rem;
+  }
+
+  .cf-ticker__heading {
+    font-size: 2.625rem;
+    padding-bottom: 2rem;
+  }
+
+  .cf-ticker__sub-heading {
+    font-size: 1rem;
+  }
+
+  .cf-ticker__current-sum {
+    font-size: 3.75rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .cf-ticker__status-bar {
+    min-height: 3.313rem;
+  }
+
+  .cf-ticker__goal-sum {
+    font-size: 6.25rem;
+  }
+}
+
 /*** partner section ***/
 .cf-partner-section {
   max-width: 25.75rem;
+  padding-bottom: 5.125rem;
 }
 
 .cf-partner__heading {
