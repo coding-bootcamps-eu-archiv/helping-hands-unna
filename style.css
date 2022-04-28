@@ -1017,6 +1017,42 @@ About
   font-size: 2.625rem;
 }
 
+/*** partner section ***/
+.cf-partner-section {
+  max-width: 25.75rem;
+}
+
+.cf-partner__heading {
+  font-size: 1.25rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.688rem;
+  font-weight: 700;
+}
+
+.cf-partner-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+  padding: 0 1rem;
+}
+
+.cf-partner {
+  width: 100%;
+}
+
+.cf-partner__logo {
+  width: 100%;
+}
+
+.cf-partner__name {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 /***************** btn style/ link Spendengala **********************/
 
 .btn_style {
