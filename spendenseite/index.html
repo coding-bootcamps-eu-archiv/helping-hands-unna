@@ -1,173 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
-      rel="stylesheet"
-    />
-    <title>direkt spenden</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navbar">
-        <a href="#" class="nav-branding"
-          ><img
-            class="navigation__logo"
-            src="./picture/helpinghands-unna.png"
-            alt="Helping Hands Logo"
-        /></a>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="#" class="nav-link">aktuelle Spendenaktion</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+    rel="stylesheet" />
+  <title>direkt spenden</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="nav-branding"><img class="navigation__logo" src="../img/helping-hands-logo.png"
+          alt="Helping Hands Logo" /></a>
+      <p class="nav-heading-mobile">Helping Hands Unna e.V.</p>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="../" class="nav-link"><img src="../img/home-icon.svg" alt="home button"
+              class="nav__home-button" /></a>
+        </li>
+        <li class="nav-item">
+          <a href="../aktuelle-spendenaktion/" class="nav-link">aktuelle Spendenaktion</a>
+        </li>
+        <li class="nav-item">
+          <a href="../about-us/" class="nav-link">Über Uns</a>
+        </li>
+        <li class="nav-item">
+          <a href="../was-bisher-gemacht-wurde/" class="nav-link">Erreichtes</a>
+        </li>
+        <li class="nav-item">
+          <a href="../spendenseite/" class="nav-link">direkt Spenden</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main_size">
+    <h1 class="direktspenden_h1">Unsere Spendenmöglichkeiten</h1>
+
+    <!---------------------Kontoverbindung------------------------------>
+    <div class="grid_container">
+      <div class="bank_bg img_left">
+        <section class="bank_contact">
+          <h2 class="text_h2">Kontoverbindung</h2>
+          <p class="text_information text_right">
+            <b> Helping Hands Unna, Melanie Gretzinger</b> <br />
+            Sparkasse UnnaKamen <br />
+            IBAN: DE57 4435 0060 1000 2221 49 <br />
+            Verwendungszweck: “Ukrainehilfe”
+          </p>
+        </section>
+      </div>
+
+      <!------------------Paypal verbindung------------------------------>
+      <div class="bank_bg">
+        <section class="bank_paypal">
+          <h2 class="text_h2">Paypal</h2>
+          <p class="text_information text_right">
+            helpinghandsunna@gmail.com
+          </p>
+          <img src="./picture/qr2.jpeg" alt="qrcode für paypal" class="text_right img_paypal" />
+        </section>
+      </div>
+
+      <!--------------------Kontakt--------------------------------------->
+      <div class="contact_bg">
+        <section class="bank_contact">
+          <h2 class="text_h2">Kontakt</h2>
+          <p class="text_information">
+            <b>Helping Hands Unna e.V.</b> <br />
+            <b> Arne Schulte</b> <br />
+            <b> Altedorneburg</b> <br />
+            <br />
+            Hertingerstraße 80 59423 Unna <br />
+            Mail: arne@ukrainehilfe-unna.de <br />
+            Tel: +49 177 400 3004
+          </p>
+          <div class="btn_social_container">
+            <a href="https://www.facebook.com/SchulteArne/about">
+              <img src="./picture/fb.svg" alt="link zu facebook" class="img_btn" /></a>
+            <a href="https://www.instagram.com/schultearne/">
+              <img src="./picture/instagram.svg" alt="link zu instagram" class="img_btn" /></a>
+            <a href="https://twitter.com/SchulteArne">
+              <img src="./picture/twitter.svg" alt="link zu twitter" class="img_btn" /></a>
+          </div>
+        </section>
+      </div>
+
+      <!----------------------------Bild & Unna60 000 logo--------------------->
+      <div class="contact_bg box_logo_unna60">
+        <a href="../index.html">
+          <img src="./picture/logo-unna-bunt.png" alt="" class="unna60" /></a>
+      </div>
+    </div>
+  </main>
+
+  <!---------------------------------footer----------------------------------->
+  <footer class="footer">
+    <!----------------| address section |---------------->
+    <div class="footer-address-wrapper">
+      <!--- social media --->
+      <address class="footer__social-media">
+        <h3 class="footer__heading">Social Media</h3>
+        <ul class="social-media__list">
+          <li>
+            <img src="../img/facebook-logo.svg" alt="facebook" class="social-media__icon" />
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Über Uns</a>
+          <li>
+            <img src="../img/instagram-logo.svg" alt="instagram" class="social-media__icon" />
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Erreichtes</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">direkt Spenden</a>
+          <li>
+            <img src="../img/twitter-logo.svg" alt="twitter" class="social-media__icon" />
           </li>
         </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
+      </address>
 
-    <main class="main_size">
-      <h1 class="direktspenden_h1">Unsere Spendenmöglichkeiten</h1>
+      <!--- organisation address --->
+      <address class="footer__adress">
+        <h3 class="footer__heading">Adresse:</h3>
+        Helping Hands Unna e.V.<br />
+        Hertingerstraße 80<br />
+        59423 Unna<br />
+      </address>
 
-      <!---------------------Kontoverbindung------------------------------>
-      <div class="grid_container">
-        <div class="bank_bg img_left">
-          <section class="bank_contact">
-            <h2 class="text_h2">Kontoverbindung</h2>
-            <p class="text_information text_right">
-              <b> Helping Hands Unna, Melanie Gretzinger</b> <br />
-              Sparkasse UnnaKamen <br />
-              IBAN: DE57 4435 0060 1000 2221 49 <br />
-              Verwendungszweck: “Ukrainehilfe”
-            </p>
-            <button class="btn_style">jetzt spenden</button>
-          </section>
-        </div>
+      <!--- contact data --->
+      <address class="footer__contact">
+        <h3 class="footer__heading">Kontakt:</h3>
+        Arne Schulte-Altedorneburg <br />
+        Mail:
+        <a class="footer__link" href="mailto:arne@ukrainehilfe-unna.de">arne@ukrainehilfe-unna.de</a><br />
+        Tel.:
+        <a class="footer__link" href="tel:+491774003004">+49 177 400 3004</a><br />
+      </address>
+      <hr class="footer__line" />
+    </div>
 
-        <!------------------Paypal verbindung------------------------------>
-        <div class="bank_bg">
-          <section class="bank_paypal">
-            <h2 class="text_h2">Paypal</h2>
-            <p class="text_information text_right">
-              helpinghandsunna@gmail.com
-            </p>
-            <img
-              src="./picture/qr2.jpeg"
-              alt="qrcode für paypal"
-              class="text_right img_paypal"
-            />
-          </section>
-        </div>
-
-        <!--------------------Kontakt--------------------------------------->
-        <div class="contact_bg">
-          <section class="bank_contact">
-            <h2 class="text_h2">Kontakt</h2>
-            <p class="text_information">
-              <b>Helping Hands Unna e.V.</b> <br />
-              <b> Arne Schulte</b> <br />
-              <b> Altedorneburg</b> <br />
-              <br />
-              Hertingerstraße 80 59423 Unna <br />
-              Mail: arne@ukrainehilfe-unna.de <br />
-              Tel: +49 177 400 3004
-            </p>
-            <div class="btn_social_container">
-              <a href="https://www.facebook.com/SchulteArne/about">
-                <img
-                  src="./picture/fb.svg"
-                  alt="link zu facebook"
-                  class="img_btn"
-              /></a>
-              <a href="https://www.instagram.com/schultearne/">
-                <img
-                  src="./picture/instagram.svg"
-                  alt="link zu instagram"
-                  class="img_btn"
-              /></a>
-              <a href="https://twitter.com/SchulteArne">
-                <img
-                  src="./picture/twitter.svg"
-                  alt="link zu twitter"
-                  class="img_btn"
-              /></a>
-            </div>
-          </section>
-        </div>
-
-        <!----------------------------Bild & Unna60 000 logo--------------------->
-        <div class="contact_bg box_logo_unna60">
-          <img src="./picture/logo-unna-bunt.png" alt="" class="unna60" />
-        </div>
+    <!----------------| fundraiser section |---------------->
+    <section class="footer__fundraiser">
+      <h3 class="footer__heading">Aktuelle Spendenaktion</h3>
+      <div class="footer__logo-wrapper">
+        <img src="../img/unna-logo-bw.svg" alt="" class="footer__fundraiser-logo"
+          onclick="location.href='./spendenseite/index.html'" />
+        <button class="btn_style--white footer__fundraiser-button" onclick="location.href='#fundraiser'">
+          jetzt spenden
+        </button>
+        <a href="#fundraiser" class="footer__fundraiser-gala">Spendengala</a>
       </div>
-    </main>
+      <hr class="footer__line" />
+    </section>
 
-    <!---------------------------------footer----------------------------------->
-    <footer class="footer">
-      <nav class="footer__navigation">
-        <h3 class="footer-navigation__heading">Weitere Informationen:</h3>
-        <ul class="footer__navigation-list">
-          <li>Datenschutz</li>
-          <li>Impressum</li>
-          <li>Cookie-Einstellungen</li>
-        </ul>
-      </nav>
-      <div class="footer-address-wrapper">
-        <address class="footer__social-media">
-          <h3 class="footer__heading">Social Media</h3>
-          <ul class="social-media__list">
-            <li>
-              <img src="./picture/fb.svg" alt="facebook" />
-            </li>
-            <li>
-              <img src="./picture/instagram.svg" alt="instagram" />
-            </li>
-            <li>
-              <img src="./picture/twitter.svg" alt="twitter" />
-            </li>
-          </ul>
-        </address>
-        <address class="footer__adress">
-          <h3 class="footer__heading">Adresse:</h3>
-          Helping Hands Unna e.V.<br />
-          Hertingerstraße 80<br />
-          59423 Unna<br />
-        </address>
-        <address class="footer__contact">
-          <h3 class="footer__heading">Kontakt:</h3>
-          Arne Schulte-Altedorneburg <br />
-          Mail:
-          <a class="footer__link" href="mailto:arne@ukrainehilfe-unna.de"
-            >arne@ukrainehilfe-unna.de</a
-          ><br />
-          Tel.:
-          <a class="footer__link" href="tel:+491774003004">+49 177 400 3004</a
-          ><br />
-        </address>
-        <button class="button">jetzt spenden</button>
-      </div>
-      <p class="footer__bootcamp">
-        Mit herzlicher Unterstützung der
-        <span class="footer__attendees">Attendees</span>
-        des Coding Bootcamps Europe.
+    <!----------------| navigation |---------------->
+    <nav class="footer__navigation">
+      <h3 class="footer__heading">Weitere Informationen:</h3>
+      <ul class="footer__navigation-list">
+        <li><a href="#" class="footer__navigation-link">Datenschutz</a></li>
+        <li><a href="#" class="footer__navigation-link">Impressum</a></li>
+      </ul>
+      <hr class="footer__line--small" />
+    </nav>
+
+    <!----------------| attendee info |---------------->
+    <section class="footer__bootcamp">
+      <h3 class="footer__heading">Abschlussprojekt</h3>
+      <p class="footer__attendees-text">
+        Made with the friendly cooperation of the
+        <span class="footer__attendees--modifier">Attendees</span> of the
+        Coding Bootcamps Europe.
       </p>
-    </footer>
-    <script src="../script.js"></script>
-  </body>
+      <p class="footer__heart">&#9825;</p>
+      <h3 class="footer__heading">Development</h3>
+      <div class="footer__development">
+        <a href="https://www.linkedin.com/in/laura-hohlsiepe-72a00620b/" target="_blank" rel="noopener noreferrer"
+          class="footer__development-link laura footer__devs--left">Laura Hohlsiepe</a>
+        <a href="https://www.linkedin.com/in/bianca-raedler-12ab0822b/" target="_blank" rel="noopener noreferrer"
+          class="footer__development-link bianca footer__devs--right">Bianca Raedler</a>
+        <a href="https://www.linkedin.com/in/tobias-sindek/" target="_blank" rel="noopener noreferrer"
+          class="footer__development-link tobias footer__devs--left">Tobias Sindek</a>
+        <a href="https://github.com/Yokosumi" target="_blank" rel="noopener noreferrer"
+          class="footer__development-link selman footer__devs--right">Selman Ciftci</a>
+      </div>
+      <h3 class="footer__heading">User Interface Design</h3>
+      <div class="footer__design">
+        <a href="https://www.linkedin.com/in/patricia-p-51713a1aa/" target="_blank" rel="noopener noreferrer"
+          class="footer__development-link">Patricia Prager</a>
+      </div>
+    </section>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
 </html>
