@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="icon" type="image/png" href="./img/helping-hands-icon.ico" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
         rel="stylesheet" />
@@ -16,25 +16,25 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="#" class="nav-branding"><img class="navigation__logo" src="./img/helping-hands-logo.png"
+            <a href="#" class="nav-branding"><img class="navigation__logo" src="./assets/img/helping-hands-logo.png"
                     alt="Helping Hands Logo" /></a>
             <p class="nav-heading-mobile">Helping Hands Unna e.V.</p>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link"><img src="./img/home-icon.svg" alt="home button"
+                    <a href="#" class="nav-link"><img src="./assets/img/home-icon.svg" alt="home button"
                             class="nav__home-button"></a>
                 </li>
                 <li class="nav-item">
-                    <a href="./spendenseite/index.html" class="nav-link">aktuelle Spendenaktion</a>
+                    <a href="./aktuelle-spendenaktion/" class="nav-link">aktuelle Spendenaktion</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./about-us/index.html" class="nav-link">Über Uns</a>
+                    <a href="./ueber-uns/" class="nav-link">Über Uns</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./was-bisher-gemacht-wurde/index.html" class="nav-link">Erreichtes</a>
+                    <a href="./erreichtes/" class="nav-link">Erreichtes</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./spendenseite/index.html" class="nav-link">direkt Spenden</a>
+                    <a href="./spendenseite/" class="nav-link">direkt Spenden</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -49,7 +49,7 @@
         <!----------------| hero section |---------------->
         <section class="home-page__content-section">
             <div class="hero-section">
-                <img class="hero-section__image-mobile" src="./img/hero-image-mobile.png" alt="" />
+                <img class="hero-section__image-mobile" src="./assets/img/home/hero-image-mobile.svg" alt="" />
                 <div class="hero-section__header">
                     <p class="hero-section__overline">Ukrainehilfe Unna</p>
                     <h2 class="hero-section__heading">Hand in Hand für die Ukraine</h2>
@@ -58,7 +58,7 @@
                         Materialien
                     </p>
                 </div>
-                <img class="hero-section__image" src="./img/filler-hero.png" alt="" />
+                <img class="hero-section__image" src="./assets/img/home/hero-image.svg" alt="" />
                 <div class="hero-section__campaign-wrapper">
                     <div class="hero-section__campaign">
                         <p class="campaign__overline">Aktuelle Spendenaktion</p>
@@ -76,9 +76,9 @@
             <div class="packages-section">
                 <h2 class="packages__heading">Spendenpakete</h2>
                 <p class="packages__text">Was ihr mit euren Spenden erreichen könnt</p>
-                <img src="./img/spendenpakete-unna_mobile.png" alt="Spendenpakete" class="packages__image--mobile"
+                <img src="./assets/img/home/spendenpakete-unna_mobile.png" alt="Spendenpakete" class="packages__image--mobile"
                     onclick="location.href='./spendenseite/index.html'">
-                <img src="./img/spendenpakete-unna.png" alt="Spendenpakete" class="packages__image"
+                <img src="./assets/img/home/spendenpakete-unna.png" alt="Spendenpakete" class="packages__image"
                     onclick="location.href='./spendenseite/index.html'">
             </div>
         </section>
@@ -93,28 +93,30 @@
                 <h2 class="gala-text__heading">SPENDENGALA</h2>
                 <div class="gala-text__dates-container">
                     <p class="gala-text__dates">
-                        <span class="gala-text--bold">Wann:</span> 13.Mai 2022
+                        <span class="gala-text--bold">Wann:</span> 2. Juni 2022
                     </p>
                     <p class="gala-text__dates">
                         <span class="gala-text--bold">Uhrzeit:</span>19:00 Uhr
                     </p>
                 </div>
-                <img class="gala-image-mobile" src="./img/gala-image-table-1.jpeg" alt="Festlicher Tisch" />
+                <img class="gala-image-mobile" src="./assets/img/home/gala-image-mobile.svg" alt="Festlicher Tisch" />
                 <p class="gala-text__location">
                     <span class="gala-text--bold">Location:</span> Neue Schmiede
                 </p>
                 <small class="gala-text__location-details">Neue Schmiede | Hellweg 31-33 | 59423 Unna</small>
-                <p class="gala-text__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni magnam
-                    sequi ab maxime rem, delectus, assumenda nesciunt minima praesentium
-                    illo dignissimos quo earum quod velit veritatis impedit iure, dolorum
-                    adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque perspiciatis consequatur rem dignissimos quibusdam! Amet natus
-                    soluta nesciunt modi enim vitae nostrum nulla est, sequi aspernatur
-                    commodi minus dicta! Laboriosam!
+                <p>
+                    <p class="gala-text__description">
+                        Gemeinsam mit der Ukrainehilfe Unna (Helping Hands e.V. Unna) und dem Kreissportbund Unna wurde die Idee geboren, an einem besonderen Abend Spenden zu sammeln und die Menschen in der Ukraine mit den notwendigen Hilfsgütern zu versorgen.
+                    </p>
+                    <p class="gala-text__description">
+                        Neben dem Eintritt von mindestens EUR 10,00 pro Person (Eintrittsgelder kommen komplett der Ukrainehilfe zugute) haben Sie als privater Gast oder Unternehmen die Möglichkeit, sich an der Spendenaktion zu beteiligen.
+                    </p>
+                    <p class="gala-text__description">
+                        Wir möchten Sie mit einem Getränk begrüßen und freuen uns, wenn Sie gemeinsam mit uns den Abend mit guter Musik und herausragenden Künstlern genießen. Für Ihr leibliches Wohl ist gesorgt. Ralf Bieri und sein Team hält einige kulinarische Köstlichkeiten für Sie bereit.
+                    </p>
                 </p>
             </div>
-            <img class="gala-image-one" src="./img/gala-image-table-1.jpeg" alt="Festlicher Tisch" />
+            <img class="gala-image-one" src="./assets/img/home/gala-image.svg" alt="Festlicher Tisch" />
         </div>
         </section>
     </main>
@@ -127,13 +129,13 @@
                 <h3 class="footer__heading">Social Media</h3>
                 <ul class="social-media__list">
                     <li>
-                        <img src="./img/facebook-logo.svg" alt="facebook" class="social-media__icon" />
+                        <img src="./assets/img/facebook-logo.svg" alt="facebook" class="social-media__icon" />
                     </li>
                     <li>
-                        <img src="./img/instagram-logo.svg" alt="instagram" class="social-media__icon" />
+                        <img src="./assets/img/instagram-logo.svg" alt="instagram" class="social-media__icon" />
                     </li>
                     <li>
-                        <img src="./img/twitter-logo.svg" alt="twitter" class="social-media__icon" />
+                        <img src="./assets/img/twitter-logo.svg" alt="twitter" class="social-media__icon" />
                     </li>
                 </ul>
             </address>
@@ -161,8 +163,8 @@
         <section class="footer__fundraiser">
             <h3 class="footer__heading">Aktuelle Spendenaktion</h3>
             <div class="footer__logo-wrapper">
-                <img src="./img/unna-logo-bw.svg" alt="" class="footer__fundraiser-logo"
-                    onclick="location.href='./spendenseite/index.html'" />
+                <img src="./assets/img/unna-logo-bw.svg" alt="" class="footer__fundraiser-logo"
+                    onclick="location.href='./aktuelle-spendenaktion/'" />
                 <button class=" btn_style--white footer__fundraiser-button" onclick="location.href='#fundraiser'">
                     jetzt spenden
                 </button>
@@ -184,30 +186,29 @@
         <!----------------| attendee info |---------------->
         <section class="footer__bootcamp">
             <h3 class="footer__heading">Abschlussprojekt</h3>
-            <p class="footer__attendees-text">
-                Made with the friendly cooperation of the
-                <span class="footer__attendees--modifier">Attendees</span> of the Coding
-                Bootcamps Europe.
-            </p>
-            <p class="footer__heart">&#9825;</p>
-            <h3 class="footer__heading">Development</h3>
-            <div class="footer__development">
-                <a href="https://www.linkedin.com/in/laura-hohlsiepe-72a00620b/" target="_blank"
-                    rel="noopener noreferrer" class="footer__development-link laura footer__devs--left">Laura
-                    Hohlsiepe</a>
-                <a href="https://www.linkedin.com/in/bianca-raedler-12ab0822b/" target="_blank"
-                    rel="noopener noreferrer" class="footer__development-link bianca footer__devs--right">Bianca
-                    Raedler</a>
-                <a href="https://www.linkedin.com/in/tobias-sindek/" target="_blank" rel="noopener noreferrer"
-                    class="footer__development-link tobias footer__devs--left">Tobias Sindek</a>
-                <a href="https://github.com/Yokosumi" target="_blank" rel="noopener noreferrer"
-                    class="footer__development-link selman footer__devs--right">Selman Ciftci</a>
-            </div>
-            <h3 class="footer__heading">User Interface Design</h3>
-            <div class="footer__design">
-                <a href="https://www.linkedin.com/in/patricia-p-51713a1aa/" target="_blank" rel="noopener noreferrer"
-                    class="footer__development-link">Patricia Prager</a>
-            </div>
+                <p class="footer__attendees-text">
+                    Diese Seite wurde erstellt von
+                    <span class="footer__attendees--modifier">Teilnehmenden</span> als Abschlussprojekt bei Coding Bootcamps Europe.
+                </p>
+                <p class="footer__heart">&#9825;</p>
+                <h3 class="footer__heading">Entwicklung</h3>
+                <div class="footer__development">
+                    <a href="https://www.linkedin.com/in/laura-hohlsiepe-72a00620b/" target="_blank"
+                        rel="noopener noreferrer" class="footer__development-link laura footer__devs--left">Laura
+                        Hohlsiepe</a>
+                    <a href="https://www.linkedin.com/in/bianca-raedler-12ab0822b/" target="_blank"
+                        rel="noopener noreferrer" class="footer__development-link bianca footer__devs--right">Bianca
+                        Raedler</a>
+                    <a href="https://www.linkedin.com/in/tobias-sindek/" target="_blank" rel="noopener noreferrer"
+                        class="footer__development-link tobias footer__devs--left">Tobias Sindek</a>
+                    <a href="https://github.com/Yokosumi" target="_blank" rel="noopener noreferrer"
+                        class="footer__development-link selman footer__devs--right">Selman Ciftci</a>
+                </div>
+                <h3 class="footer__heading">User Interface Design</h3>
+                <div class="footer__design">
+                    <a href="https://www.linkedin.com/in/patricia-p-51713a1aa/" target="_blank"
+                        rel="noopener noreferrer" class="footer__development-link">Patricia Prager</a>
+                </div>
         </section>
     </footer>
 
