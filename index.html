@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="icon" type="image/png" href="./img/helping-hands-icon.ico" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
         rel="stylesheet" />
@@ -16,22 +16,22 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="#" class="nav-branding"><img class="navigation__logo" src="./img/helping-hands-logo.png"
+            <a href="#" class="nav-branding"><img class="navigation__logo" src="./assets/img/helping-hands-logo.png"
                     alt="Helping Hands Logo" /></a>
             <p class="nav-heading-mobile">Helping Hands Unna e.V.</p>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link"><img src="./img/home-icon.svg" alt="home button"
+                    <a href="#" class="nav-link"><img src="./assets/img/home-icon.svg" alt="home button"
                             class="nav__home-button"></a>
                 </li>
                 <li class="nav-item">
                     <a href="./aktuelle-spendenaktion/" class="nav-link">aktuelle Spendenaktion</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./about-us/" class="nav-link">Über Uns</a>
+                    <a href="./ueber-uns/" class="nav-link">Über Uns</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./was-bisher-gemacht-wurde/" class="nav-link">Erreichtes</a>
+                    <a href="./erreichtes/" class="nav-link">Erreichtes</a>
                 </li>
                 <li class="nav-item">
                     <a href="./spendenseite/" class="nav-link">direkt Spenden</a>
@@ -49,7 +49,7 @@
         <!----------------| hero section |---------------->
         <section class="home-page__content-section">
             <div class="hero-section">
-                <img class="hero-section__image-mobile" src="./img/home-page-hero-image-mobile.svg" alt="" />
+                <img class="hero-section__image-mobile" src="./assets/img/home/hero-image-mobile.svg" alt="" />
                 <div class="hero-section__header">
                     <p class="hero-section__overline">Ukrainehilfe Unna</p>
                     <h2 class="hero-section__heading">Hand in Hand für die Ukraine</h2>
@@ -58,7 +58,7 @@
                         Materialien
                     </p>
                 </div>
-                <img class="hero-section__image" src="./img/home-page-hero-image.svg" alt="" />
+                <img class="hero-section__image" src="./assets/img/home/hero-image.svg" alt="" />
                 <div class="hero-section__campaign-wrapper">
                     <div class="hero-section__campaign">
                         <p class="campaign__overline">Aktuelle Spendenaktion</p>
@@ -76,9 +76,9 @@
             <div class="packages-section">
                 <h2 class="packages__heading">Spendenpakete</h2>
                 <p class="packages__text">Was ihr mit euren Spenden erreichen könnt</p>
-                <img src="./img/spendenpakete-unna_mobile.png" alt="Spendenpakete" class="packages__image--mobile"
+                <img src="./assets/img/home/spendenpakete-unna_mobile.png" alt="Spendenpakete" class="packages__image--mobile"
                     onclick="location.href='./spendenseite/index.html'">
-                <img src="./img/spendenpakete-unna.png" alt="Spendenpakete" class="packages__image"
+                <img src="./assets/img/home/spendenpakete-unna.png" alt="Spendenpakete" class="packages__image"
                     onclick="location.href='./spendenseite/index.html'">
             </div>
         </section>
@@ -99,7 +99,7 @@
                         <span class="gala-text--bold">Uhrzeit:</span>19:00 Uhr
                     </p>
                 </div>
-                <img class="gala-image-mobile" src="./img/home-page-gala-image-mobile.svg" alt="Festlicher Tisch" />
+                <img class="gala-image-mobile" src="./assets/img/home/gala-image-mobile.svg" alt="Festlicher Tisch" />
                 <p class="gala-text__location">
                     <span class="gala-text--bold">Location:</span> Neue Schmiede
                 </p>
@@ -116,7 +116,7 @@
                     </p>
                 </p>
             </div>
-            <img class="gala-image-one" src="./img/home-page-gala-image.svg" alt="Festlicher Tisch" />
+            <img class="gala-image-one" src="./assets/img/home/gala-image.svg" alt="Festlicher Tisch" />
         </div>
         </section>
     </main>
@@ -129,13 +129,13 @@
                 <h3 class="footer__heading">Social Media</h3>
                 <ul class="social-media__list">
                     <li>
-                        <img src="./img/facebook-logo.svg" alt="facebook" class="social-media__icon" />
+                        <img src="./assets/img/facebook-logo.svg" alt="facebook" class="social-media__icon" />
                     </li>
                     <li>
-                        <img src="./img/instagram-logo.svg" alt="instagram" class="social-media__icon" />
+                        <img src="./assets/img/instagram-logo.svg" alt="instagram" class="social-media__icon" />
                     </li>
                     <li>
-                        <img src="./img/twitter-logo.svg" alt="twitter" class="social-media__icon" />
+                        <img src="./assets/img/twitter-logo.svg" alt="twitter" class="social-media__icon" />
                     </li>
                 </ul>
             </address>
@@ -163,7 +163,7 @@
         <section class="footer__fundraiser">
             <h3 class="footer__heading">Aktuelle Spendenaktion</h3>
             <div class="footer__logo-wrapper">
-                <img src="./img/unna-logo-bw.svg" alt="" class="footer__fundraiser-logo"
+                <img src="./assets/img/unna-logo-bw.svg" alt="" class="footer__fundraiser-logo"
                     onclick="location.href='./aktuelle-spendenaktion/'" />
                 <button class=" btn_style--white footer__fundraiser-button" onclick="location.href='#fundraiser'">
                     jetzt spenden
