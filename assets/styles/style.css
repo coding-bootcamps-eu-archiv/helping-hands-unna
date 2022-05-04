@@ -245,7 +245,7 @@ button {
 .au_content {
   margin: 0 auto;
   max-width: 90rem;
-  _min-height: 85vh;
+  min-height: 80vh;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -357,9 +357,6 @@ li {
   padding-top: 3rem;
 }
 .au_wrapper {
-  _margin: 0 auto;
-  _display: flex;
-  _justify-content: center;
   display: grid;
   grid-template-columns: auto auto;
   gap: 3rem;
