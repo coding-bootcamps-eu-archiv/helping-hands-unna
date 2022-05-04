@@ -64,38 +64,30 @@
                     <div class="div-summe">
                         <p>gespendete</p>
                         <p><b>GESAMTSUMME</b></p>
-                        <p><b>000.000,-€</b></p>
+                        <p><b>230€</b></p>
                     </div>
-                    <div class="div-personen">
+                    <div class="div-personen" style="display: none">
                         <p>erreichte</p>
                         <p><b>PERSONEN</b></p>
                         <p><b>00.000 T</b></p>
                     </div>
-                    <div class="div-lieferungen">
+                    <div class="div-lieferungen" style="display: none">
                         <p>gemachte</p>
                         <p><b>LIEFERUNGEN</b></p>
                         <p><b>00.000</b></p>
                     </div>
                 </div>
             </section>
-            <section class="section-tabelle">
+            <section class="section-tabelle"></section>
+            <section class="products">
                 <div class="second-banner">
                     <h2 class="h2-banner">
                         Das hier haben wir bis zu diesem Zeitpunkt von Euren Spenden gekauft
                     </h2>
                 </div>
-                <div class="tabelle">
-                    <table id="tabelle">
-                        <tr>
-                            <th>BESCHREIBUNG</th>
-                            <th>PREIS</th>
-                            <th>ANZAHL</th>
-                            <th>DATUM</th>
-                        </tr>
-                    </table>
-                </div>
+                <ul id="products-list" class="products__list"></ul>
             </section>
-            <section class="section-video">
+            <section class="section-video" style="display: none">
                 <div class="div-video">
                     <h3>Was bisher getan wurde</h3>
                     <p>Video von unseren zweiten Tour</p>
@@ -242,6 +234,7 @@
                 </section>
             </footer>
         </main>
-        <script src="../script.js"></script>
+        <script src="../assets/scripts/menu.js"></script>
+        <script src="../assets/scripts/products.js"></script>
     </body>
 </html>
