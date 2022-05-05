@@ -416,6 +416,7 @@ li {
 .au_what_img {
     justify-self: start;
     padding-top: 3rem;
+    max-width: 95%;
 }
 
 .au_mobile_img {
@@ -450,6 +451,8 @@ li {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 1rem;
+        padding-left: 2.5rem;
     }
     .au_img__section {
         display: none;
@@ -464,6 +467,11 @@ li {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 24rem;
+        margin: 0 auto;
+    }
+    .au_certificate__img--gap {
+        margin-right: 0;
     }
     .au_certificate_preview {
         display: flex;
@@ -473,16 +481,31 @@ li {
     .au_content__para {
         font-size: 0.8rem;
     }
+    .au_content_overline {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #0b0a0b99;
+    }
     .au_content__header {
         font-weight: 700;
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 0;
     }
     .au_content__subheader {
         font-size: 1rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
     }
     .au_content__para {
-        padding: 1.5rem;
+        padding: 0 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .au_who_address {
+        margin-top: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .au_text__section {
         padding-left: 0;
@@ -490,6 +513,34 @@ li {
     .au_header__wrapper {
         padding-top: 3rem;
         padding-left: 0;
+    }
+    .au_article_wrapper_secondary {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .au_who_img {
+        width: 85%;
+        max-width: 28.8rem;
+    }
+    .au_what_img {
+        display: none;
+    }
+    .au_wrapper {
+        grid-template-columns: auto;
+        margin-left: 0;
+        gap: 0;
+    }
+    .au_padding {
+        padding-left: 2.5rem;
+        width: max-content;
+    }
+    .au_certificate_header {
+        font-size: 1.25rem;
+    }
+
+    .au_certificate_subheading {
+        font-size: 0.75rem;
+        margin-bottom: 2rem;
     }
 }
 
