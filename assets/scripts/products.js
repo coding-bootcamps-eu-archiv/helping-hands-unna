@@ -3,7 +3,7 @@ getProductsData();
 function getProductsData() {
     fetch("https://api.ukrainehilfe-unna.de/items/erreichtes")
         .then((res) => res.json())
-        .then((data) => renderProducts(data.data));
+        .then((data) => renderProducts(data.data.reverse()));
 }
 
 function renderProducts(products) {
