@@ -26,7 +26,7 @@ function renderProducts(products) {
         const header = document.createElement("header");
 
         const date = document.createElement("small");
-        date.innerText = renderDate(products[i].datum);
+        date.innerHTML = renderDate(products[i].datum);
 
         const title = document.createElement("h3");
         title.innerText = products[i].beschreibung;
@@ -65,7 +65,7 @@ function renderDate(date) {
     const month = date[1];
     const year = date[0];
 
-    return `${day}. ${month}. ${year}`;
+    return `${day}.${month}.<br>${year}`;
 }
 
 document.body.addEventListener("click", collapseAccordeon);
