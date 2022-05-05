@@ -1,5 +1,7 @@
+getProductsData();
+
 function getProductsData() {
-    fetch("https://ukrainehilfe-unna.ferdinand-niemann.eu/items/produkte")
+    fetch("https://api.ukrainehilfe-unna.de/items/erreichtes")
         .then((res) => res.json())
         .then((data) => renderProducts(data.data));
 }
@@ -27,7 +29,7 @@ function renderProducts(products) {
         date.innerText = renderDate(products[i].datum);
 
         const title = document.createElement("h3");
-        title.innerText = products[i].produkte;
+        title.innerText = products[i].beschreibung;
 
         header.append(date, title);
         description.append(header);
@@ -35,7 +37,7 @@ function renderProducts(products) {
         if (products[i].details !== null) {
             const details = document.createElement("p");
             details.classList.add("product-details");
-            details.innerText = products[i].details;
+            details.innerHTML = products[i].details;
 
             description.append(details);
         }
@@ -50,7 +52,6 @@ function createId(num) {
 
     for (let i = 0; i < 8; i++) {
         const randomIndex = Math.floor(Math.random() * 27);
-        console.log(randomIndex);
         const alphabet = "abcdefghijklmnopqrstuvwxyz";
         id += alphabet[randomIndex];
     }
@@ -67,4 +68,14 @@ function renderDate(date) {
     return `${day}. ${month}. ${year}`;
 }
 
-getProductsData();
+document.body.addEventListener("click", collapseAccordeon);
+
+function collapseAccordeon(e) {
+    if (e.target.type === "radio") {
+        e.target.classList.add("active");
+    } else if (document.querySelector(".active")) {
+        const activeBox = document.querySelector(".active");
+        activeBox.checked = false;
+        activeBox.classList.remove("active");
+    }
+}
