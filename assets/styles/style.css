@@ -38,6 +38,7 @@ button {
 
     --tx-black: #0b0a0b;
     --tx-white: #fffafa;
+    --tx-overline: #0b0a0b99;
 
     --bg-white: #fffafa;
     --bg-blue: rgba(0, 125, 250, 0.06);
@@ -1415,8 +1416,17 @@ About
     display: flex;
     justify-content: space-between;
     background-color: var(--bg-blue);
-    max-height: 40rem;
+    max-height: 60rem;
     max-width: 35rem;
+}
+
+.link_donate {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: inherit;
+    text-decoration: none;
+    border: 4px solid var(--bg-nav-blue);
+    margin-bottom: 2rem;
 }
 
 .btn_social_container {
@@ -1475,8 +1485,20 @@ About
 
 /********************************************************/
 /*** erreichtes ***/
-.h2-banner {
+.avd-overline {
+    font-size: 1rem;
+    color: var(--tx-overline);
+}
+
+.avd__header-primary {
+    font-size: 2.5rem;
     margin: 0;
+}
+
+.avd__header-secondary {
+    font-size: 2rem;
+    font-weight: 600;
+    _padding: 1rem 0;
 }
 
 .first-section {
@@ -1485,14 +1507,15 @@ About
 
 .first-banner {
     background-color: var(--bg-yellow-secondary);
-    margin: 2rem 27rem 2rem 0rem;
-    padding: 0.5rem 0rem 0.5rem 15rem;
+    padding: 1rem 4rem 1rem 8.875rem;
+    margin-top: 2.5rem;
+    width: 80%;
 }
 
 .div-flex {
     display: flex;
     flex-direction: row;
-    margin: 2rem;
+    margin: 3rem;
     justify-content: center;
     text-align: center;
 }
@@ -1500,9 +1523,19 @@ About
 .div-summe {
     margin: 1rem;
     background-color: var(--bg-blue);
-    width: 20%;
-    padding: 2rem;
+    padding: 2rem 3rem;
     box-shadow: 0px 5px 5px lightblue;
+}
+
+.avd-donated__sum-text--big {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.avd-donated__sum {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .div-personen {
@@ -1523,14 +1556,21 @@ About
 
 /************************************/
 
+.products {
+    margin-bottom: 3rem;
+}
+
 .second-banner {
     background-color: var(--bg-yellow-secondary);
-    margin: 2rem 0rem 2rem 14rem;
-    padding: 0.5rem 12rem 0.5rem 3rem;
+    width: 80%;
+    padding: 1rem 12rem 1rem 3rem;
+    margin-left: auto;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .products__list {
-    width: min(700px, 100%);
+    width: min(900px, 100%);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1542,13 +1582,23 @@ About
 }
 
 .product-description {
-    border-bottom: 2px solid var(--bg-yellow-secondary);
-    background-color: var(--bg-blue);
-    padding: 0.25rem;
+    border: 2px solid var(--bg-nav-blue);
+    border-radius: 0.25rem;
+    padding: 1.25rem 2rem;
     display: block;
     position: relative;
     overflow: hidden;
-    margin-bottom: 2rem;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.product-description::after {
+    content: ">";
+    position: absolute;
+    font-size: 1.5rem;
+    right: 0.5rem;
+    top: 1.5rem;
+    transform: rotate(90deg);
+    transition: 0.2s;
 }
 
 .product-description > header {
@@ -1566,22 +1616,32 @@ About
     color: white;
 }
 
+.product-toggle:checked + .product-description::after {
+    transform: rotate(-90deg);
+    transition: 0.2s;
+}
+
 .product-description > header > small {
     font-size: 0.65rem;
     font-weight: 900;
+    background-color: var(--bg-nav-blue);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: white;
 }
 
 .product-details {
     transform: translateY(-500%);
-    position: absolute;
-    transition: transform 0.2s;
-    padding: 1rem;
+    font-size: 0;
+    transition: 0.2s;
 }
 
-.product-toggle:checked ~ .product-description > .product-details {
+.product-toggle:checked + .product-description > .product-details {
     transform: translateY(0);
-    position: relative;
-    transition: transform 0.2s;
+    font-size: 1rem;
+    transition: 0.2s;
+    padding: 1rem;
+    line-height: 2;
 }
 
 table {
@@ -1622,7 +1682,30 @@ tr {
 
 /********************************************/
 
-@media screen {
+@media screen and (max-width: 768px) {
+    .first-banner {
+        width: 100%;
+        padding: 1rem 2rem 1rem 2rem;
+        margin-top: 0;
+    }
+
+    .avd-overline {
+        font-size: 0.75rem;
+    }
+
+    .avd__header-primary {
+        font-size: 2rem;
+    }
+
+    .second-banner {
+        width: 100%;
+        padding: 1rem 2rem 1rem 2rem;
+        margin-top: 0;
+    }
+
+    .avd__header-secondary {
+        font-size: 1.25rem;
+    }
 }
 
 /********************************************************/

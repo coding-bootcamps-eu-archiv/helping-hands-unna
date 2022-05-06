@@ -3,7 +3,7 @@ getProductsData();
 function getProductsData() {
     fetch("https://api.ukrainehilfe-unna.de/items/erreichtes")
         .then((res) => res.json())
-        .then((data) => renderProducts(data.data));
+        .then((data) => renderProducts(data.data.reverse()));
 }
 
 function renderProducts(products) {
@@ -26,7 +26,7 @@ function renderProducts(products) {
         const header = document.createElement("header");
 
         const date = document.createElement("small");
-        date.innerText = renderDate(products[i].datum);
+        date.innerHTML = renderDate(products[i].datum);
 
         const title = document.createElement("h3");
         title.innerText = products[i].beschreibung;
@@ -65,7 +65,7 @@ function renderDate(date) {
     const month = date[1];
     const year = date[0];
 
-    return `${day}. ${month}. ${year}`;
+    return `${day}.${month}.<br>${year}`;
 }
 
 document.body.addEventListener("click", collapseAccordeon);
