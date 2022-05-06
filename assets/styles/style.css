@@ -1547,6 +1547,10 @@ About
 
 /************************************/
 
+.products {
+  margin-bottom: 3rem;
+}
+
 .second-banner {
   background-color: var(--bg-yellow-secondary);
   width: 80%;
@@ -1575,7 +1579,7 @@ About
   display: block;
   position: relative;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin: 0 1rem 2rem 1rem;
 }
 
 .product-description::after {
@@ -1669,7 +1673,30 @@ tr {
 
 /********************************************/
 
-@media screen {
+@media screen and (max-width: 768px) {
+  .first-banner {
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 0;
+  }
+
+  .avd-overline {
+    font-size: 0.75rem;
+  }
+
+  .avd__header-primary {
+    font-size: 2rem;
+  }
+
+  .second-banner {
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 0;
+  }
+
+  .avd__header-secondary {
+    font-size: 1.25rem;
+  }
 }
 
 /********************************************************/
