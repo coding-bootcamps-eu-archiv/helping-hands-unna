@@ -3,7 +3,7 @@ getPartnersData();
 function getPartnersData() {
     fetch("https://api.ukrainehilfe-unna.de/items/partner")
         .then((res) => res.json())
-        .then((data) => renderPartners(data.data.reverse()));
+        .then((data) => renderPartners(data.data));
 }
 
 function renderPartners(partners) {
