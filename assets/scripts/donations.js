@@ -8,6 +8,15 @@ function getDonations() {
 
 function renderDonations(donations) {
     const outputSum = document.querySelector("#current-sum");
+    donations = donations.spendenstand;
 
-    outputSum.innerText = donations.spendenstand + " €";
+    outputSum.innerText = donations + " €";
+    renderDonationBar(donations);
+}
+
+function renderDonationBar(donations) {
+    const bar = document.querySelector(".cf-ticker__status-bar");
+    const progress = `${Math.round((donations / 60000) * 100)}%`;
+
+    bar.style.setProperty("--ticker-counter", progress);
 }
