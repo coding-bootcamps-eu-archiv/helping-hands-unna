@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
         rel="stylesheet" />
+    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
     <title>Ukrainehilfe Unna</title>
 </head>
 
@@ -55,9 +56,11 @@
                         <img src="../assets/img/unna-60000-logo.png" alt="Unna 60000" class="cf-hero__logo">
                         <h2 class="cf-hero__heading">Gedanke hinter "UNNA 60.000"</h2>
                         <p class="cf-hero__text">Die neue Spendenaktion – „UNNA60.000“. Unna ist unsere Stadt, Unna ist unser Kreis. Die Stadt Unna hat über den Daumen 60.000 Einwohner - das haben wir uns erstmal aus Ziel genommen, 60.000 € Spendengelder zu erreichen. Der Kreis Unna hat knapp 400.000 Einwohner - diese Summe wäre auch schön, erschien uns aber unrealistisch. Mal sehen, was wir bis zum 2. Juni 2022 gemeinsam erreichen - da ist erstmals der Schlusspunkt der Aktion, der Höhepunkt, die Spendengala.</p>
-                        <a href="../spendenseite/"><button class="cf-hero__button cf-temp-button">jetzt
-                                spenden</button></a>
-                        <a href="../index.html/" class="cf-hero__gala-link">Spendengala</a>
+                        <div id="donate-button-container" style="display: flex; align-items: center; gap: 2rem;">
+                            <div id="donate-button" style="margin-top: 1rem; margin-left: 1rem"></div>
+                            <a href="../spendenseite" style="text-decoration: none">Spendenoptionen</a>
+                        </div>
+                        <a href="../#fundraiser" class="cf-hero__gala-link">Spendengala</a>
                     </div>
                     <img class="cf-hero__image" src="../assets/img/current-fundraiser-image.svg"
                         alt="3 winkende Menschen vor einem Transporter">
@@ -69,9 +72,8 @@
                     <h2 class="cf-ticker-section__heading">Wieviel bisher gespendet wurde</h2>
                     <div class="cf-ticker">
                         <h3 class="cf-ticker__heading">Spendenticker</h3>
-                            <p class="cf-ticker__sub-heading">Aktuelle Spendensumme</p>
-                            <h4 class="cf-ticker__current-sum" id="current-sum">230 €
-                        </h4>
+                        <p class="cf-ticker__sub-heading">Aktuelle Spendensumme</p>
+                        <h4 class="cf-ticker__current-sum" id="current-sum">230 €</h4>
                         <div class="cf-ticker__status-bar"></div>
                         <h4 class="cf-ticker__goal-sum">60.000 €</h4>
                     </div>
@@ -178,11 +180,9 @@
                 </div>
             </section>
         </footer>
-
         <script src="../assets/scripts/menu.js"></script>
         <script src="../assets/scripts/donations.js"></script>
         <script src="../assets/scripts/partner.js"></script>
+        <script src="../assets/scripts/paypal.js"></script>
     </body>
-
-
 </html>

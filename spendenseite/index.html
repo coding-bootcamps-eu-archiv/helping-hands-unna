@@ -9,6 +9,10 @@
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
             rel="stylesheet"
         />
+        <script
+            src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
+            charset="UTF-8"
+        ></script>
         <title>direkt spenden</title>
     </head>
 
@@ -76,18 +80,17 @@
                     <section class="bank_paypal">
                         <h2 class="text_h2">Paypal</h2>
                         <p class="text_information text_right">Ukrainehilfe-Unna</p>
-                        <a href="https://www.paypal.com/donate/?hosted_button_id=LHRCFTZ847RNU">
-                            <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png"
-                                alt="qrcode für paypal"
-                                class="text_right img_paypal"
-                            />
-                        </a>
-                        <a
-                            href="https://www.paypal.com/donate/?hosted_button_id=LHRCFTZ847RNU"
-                            class="link_donate"
-                            >Hier klicken, um per PayPal zu spenden</a
-                        >
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png"
+                            alt="qrcode für paypal"
+                            class="text_right img_paypal"
+                        />
+                        <div id="donate-button-container">
+                            <div
+                                id="donate-button"
+                                style="text-align: center; margin-bottom: 1rem"
+                            ></div>
+                        </div>
                     </section>
                 </div>
 
@@ -276,5 +279,6 @@
         </footer>
 
         <script src="../assets/scripts/menu.js"></script>
+        <script src="../assets/scripts/paypal.js"></script>
     </body>
 </html>
