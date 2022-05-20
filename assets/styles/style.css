@@ -1708,6 +1708,49 @@ tr {
     }
 }
 
+.event {
+    width: min(700px, 100%);
+    margin: auto;
+    padding: 1rem;
+}
+
+.event-header {
+    color: var(--c-btn-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-size: 3rem;
+}
+
+.event-sub-header {
+    text-transform: uppercase;
+    margin-block: 4rem 1rem;
+    font-size: 2.5rem;
+}
+
+.event-paragraph {
+    margin-block: 1rem;
+    line-height: 1.8;
+    font-size: 1.25rem;
+}
+
+.goods > details {
+    margin-block: 1rem;
+}
+
+.goods summary {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.goods ul {
+    padding-left: 2rem;
+    line-height: 1.6;
+}
+
+.goods ul li {
+    list-style-type: disc;
+}
+
 /********************************************************/
 /*** footer ***/
 
