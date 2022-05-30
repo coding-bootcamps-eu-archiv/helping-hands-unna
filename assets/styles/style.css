@@ -828,7 +828,6 @@ About
 .gala-section {
     padding-top: 2.813rem;
     background-color: var(--bg-yellow);
-    height: 70rem;
 }
 
 .gala-text__overline {
@@ -884,11 +883,16 @@ About
     margin-bottom: 1.875rem;
 }
 
-.gala-text__description {
+.gala-text__description.wide {
     font-size: 0.875rem;
     margin-top: 1rem;
     margin-left: 4rem;
     max-width: 16.438rem;
+}
+
+.gala-text__description.wide {
+    font-size: 1rem;
+    max-width: unset;
 }
 
 .gala-image-one {
@@ -969,7 +973,6 @@ About
     .gala-text__description {
         margin-top: 1.875rem;
         margin-left: 2rem;
-        max-width: 18.75rem;
     }
 
     .gala-image-one {
