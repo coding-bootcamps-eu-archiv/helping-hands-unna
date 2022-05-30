@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <link rel="icon" type="image/png" href="./img/helping-hands-icon.ico" />
+        <link rel="stylesheet" href="./assets/styles/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+            rel="stylesheet"
+        />
+        <title>Ukrainehilfe Unna</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <link rel="icon" type="image/png" href="./img/helping-hands-icon.ico" />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
-        rel="stylesheet" />
-    <title>Ukrainehilfe Unna</title>
-</head>
-
-<body>
-    <header class="header">
-        <nav class="navbar">
+    <body>
+        <header class="header">
+            <nav class="navbar">
                 <a href="#" class="nav-branding"
                     ><img
                         class="navigation__logo"
@@ -27,27 +27,27 @@
                     <li class="nav-item">
                         <a href="../" class="nav-link"
                             ><img
-                                src="../assets/img/home-icon.svg"
+                                src="./assets/img/home-icon.svg"
                                 alt="home button"
                                 class="nav__home-button"
                         /></a>
                     </li>
                     <li class="nav-item">
-                        <a href="../aktuelle-spendenaktion/" class="nav-link"
+                        <a href="./aktuelle-spendenaktion/" class="nav-link"
                             >aktuelle Spendenaktion</a
                         >
                     </li>
                     <li class="nav-item">
-                        <a href="../sonderaktion/" class="nav-link">Sonderaktion</a>
+                        <a href="./spendengala/" class="nav-link">Spendengala</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../ueber-uns/" class="nav-link">Über Uns</a>
+                        <a href="./ueber-uns/" class="nav-link">Über Uns</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../erreichtes/" class="nav-link">Erreichtes</a>
+                        <a href="./erreichtes/" class="nav-link">Erreichtes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../spendenseite/" class="nav-link">direkt Spenden</a>
+                        <a href="./spendenseite/" class="nav-link">direkt Spenden</a>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -56,105 +56,161 @@
                     <span class="bar"></span>
                 </div>
             </nav>
-    </header>
+        </header>
 
-    <main>
-        <!----------------| hero section |---------------->
-        <section class="home-page__content-section">
-            <div class="hero-section">
-                <img class="hero-section__image-mobile" src="./assets/img/home/hero-image-mobile.svg" alt="" />
-                <div class="hero-section__header">
-                    <p class="hero-section__overline">Ukrainehilfe Unna</p>
-                    <h2 class="hero-section__heading">Hand in Hand für die Ukraine</h2>
-                    <p class="hero-section__small">
-                        Wir versorgen vom Krieg betroffene Menschen mit lebensnotwendigen
-                        Materialien
-                    </p>
-                </div>
-                <img class="hero-section__image" src="./assets/img/home/hero-image.svg" alt="" />
-                <div class="hero-section__campaign-wrapper">
-                    <div class="hero-section__campaign">
-                        <p class="campaign__overline">Aktuelle Spendenaktion</p>
-                        <h2 class="campaign__heading">"UNNA 60.000"</h2>
-                        <button class="btn_style--white campaign__button"
-                            onclick="location.href='./spendenseite/index.html'">jetzt
-                            spenden</button>
+        <main>
+            <!----------------| hero section |---------------->
+            <section class="home-page__content-section">
+                <div class="hero-section">
+                    <img
+                        class="hero-section__image-mobile"
+                        src="./assets/img/home/hero-image-mobile.svg"
+                        alt=""
+                    />
+                    <div class="hero-section__header">
+                        <p class="hero-section__overline">Ukrainehilfe Unna</p>
+                        <h2 class="hero-section__heading">Hand in Hand für die Ukraine</h2>
+                        <p class="hero-section__small">
+                            Wir versorgen vom Krieg betroffene Menschen mit lebensnotwendigen
+                            Materialien
+                        </p>
+                    </div>
+                    <img
+                        class="hero-section__image"
+                        src="./assets/img/home/hero-image.svg"
+                        alt=""
+                    />
+                    <div class="hero-section__campaign-wrapper">
+                        <div class="hero-section__campaign">
+                            <p class="campaign__overline">Spendengala am 2. Juni:</p>
+                            <h2 class="campaign__heading">"UNNA 60.000"</h2>
+                            <button
+                                class="btn_style--white campaign__button"
+                                onclick="location.href='./spendengala/index.html#anmeldung'"
+                            >
+                                Anmeldung
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!----------------| packages section |---------------->
-        <section class="home-page__content-section hp-bg--blue">
-            <div class="packages-section">
-                <h2 class="packages__heading">Spendenpakete</h2>
-                <p class="packages__text">Was ihr mit euren Spenden erreichen könnt</p>
-                <img src="./assets/img/home/spendenpakete-unna_mobile.png" alt="Spendenpakete" class="packages__image--mobile"
-                    onclick="location.href='./spendenseite/index.html'">
-                <img src="./assets/img/home/spendenpakete-unna.png" alt="Spendenpakete" class="packages__image"
-                    onclick="location.href='./spendenseite/index.html'">
-            </div>
-        </section>
-
-        <!----------------| gala section |---------------->
-        <a id="#fundraiser">
-            <section class="home-page__content-section hp-bg--yellow">
-        </a>
-        <div class="gala-section">
-            <div class="gala-text">
-                <p class="gala-text__overline">HÖHEPUNKT</p>
-                <h2 class="gala-text__heading">SPENDENGALA</h2>
-                <div class="gala-text__dates-container">
-                    <p class="gala-text__dates">
-                        <span class="gala-text--bold">Wann:</span> 2. Juni 2022
-                    </p>
-                    <p class="gala-text__dates">
-                        <span class="gala-text--bold">Uhrzeit:</span>19:00 Uhr
-                    </p>
+            <!----------------| packages section |---------------->
+            <section class="home-page__content-section hp-bg--blue">
+                <div class="packages-section">
+                    <h2 class="packages__heading">Spendenpakete</h2>
+                    <p class="packages__text">Was ihr mit euren Spenden erreichen könnt</p>
+                    <img
+                        src="./assets/img/home/spendenpakete-unna_mobile.png"
+                        alt="Spendenpakete"
+                        class="packages__image--mobile"
+                        onclick="location.href='./spendenseite/index.html'"
+                    />
+                    <img
+                        src="./assets/img/home/spendenpakete-unna.png"
+                        alt="Spendenpakete"
+                        class="packages__image"
+                        onclick="location.href='./spendenseite/index.html'"
+                    />
                 </div>
-                <img class="gala-image-mobile" src="./assets/img/home/gala-image-mobile.svg" alt="Festlicher Tisch" />
-                <p class="gala-text__location">
-                    <span class="gala-text--bold">Location:</span> Neue Schmiede
-                </p>
-                <small class="gala-text__location-details">Neue Schmiede | Hellweg 31-33 | 59423 Unna</small>
-                <p>
-                    <p class="gala-text__description">
-                        Gemeinsam mit der Ukrainehilfe Unna (Helping Hands e.V. Unna) und dem Kreissportbund Unna wurde die Idee geboren, an einem besonderen Abend Spenden zu sammeln und die Menschen in der Ukraine mit den notwendigen Hilfsgütern zu versorgen.
+            </section>
+
+            <!----------------| gala section |---------------->
+            <div class="gala-section" id="fundraiser" style="margin-bottom: 2rem">
+                <div class="gala-text">
+                    <p class="gala-text__overline">HÖHEPUNKT</p>
+                    <h2 class="gala-text__heading">SPENDENGALA</h2>
+                    <div class="gala-text__dates-container">
+                        <p class="gala-text__dates">
+                            <span class="gala-text--bold">Wann:</span> 2. Juni 2022
+                        </p>
+                        <p class="gala-text__dates">
+                            <span class="gala-text--bold">Uhrzeit:</span>19:00 Uhr
+                        </p>
+                    </div>
+                    <img
+                        class="gala-image-mobile"
+                        src="./assets/img/home/gala-image-mobile.svg"
+                        alt="Festlicher Tisch"
+                    />
+                    <p class="gala-text__location">
+                        <span class="gala-text--bold">Location:</span> Neue Schmiede
                     </p>
-                    <p class="gala-text__description">
-                        Neben dem Eintritt von mindestens EUR 10,00 pro Person (Eintrittsgelder kommen komplett der Ukrainehilfe zugute) haben Sie als privater Gast oder Unternehmen die Möglichkeit, sich an der Spendenaktion zu beteiligen.
-                    </p>
-                    <p class="gala-text__description">
-                        Wir möchten Sie mit einem Getränk begrüßen und freuen uns, wenn Sie gemeinsam mit uns den Abend mit guter Musik und herausragenden Künstlern genießen. Für Ihr leibliches Wohl ist gesorgt. Ralf Bieri und sein Team hält einige kulinarische Köstlichkeiten für Sie bereit.
-                    </p>
-                </p>
+                    <small class="gala-text__location-details"
+                        >Neue Schmiede | Hellweg 31-33 | 59423 Unna</small
+                    >
+                    <div>
+                        <p class="gala-text__description">
+                            Gemeinsam mit der Ukrainehilfe Unna (Helping Hands e.V. Unna) und dem
+                            Kreissportbund Unna wurde die Idee geboren, an einem besonderen Abend
+                            Spenden zu sammeln und die Menschen in der Ukraine mit den notwendigen
+                            Hilfsgütern zu versorgen.
+                        </p>
+                        <p class="gala-text__description">
+                            Neben dem Eintritt von mindestens EUR 10,00 pro Person (Eintrittsgelder
+                            kommen komplett der Ukrainehilfe zugute) haben Sie als privater Gast
+                            oder Unternehmen die Möglichkeit, sich an der Spendenaktion zu
+                            beteiligen.
+                        </p>
+                        <p class="gala-text__description">
+                            Wir möchten Sie mit einem Getränk begrüßen und freuen uns, wenn Sie
+                            gemeinsam mit uns den Abend mit guter Musik und herausragenden Künstlern
+                            genießen. Für Ihr leibliches Wohl ist gesorgt. Ralf Bieri und sein Team
+                            hält einige kulinarische Köstlichkeiten für Sie bereit.
+                        </p>
+                        <h3 class="gala-text__heading" style="margin-top: 2rem">Anmeldung</h3>
+                        <p
+                            class="gala-text__description"
+                            style="padding: 1rem; font-weight: 700; border: 2px solid black"
+                        >
+                            Wer sich für die Gala anmelden möchte: Bitte eine formlose Mail an
+                            "Gala@Ukrainehilfe-Unna.de", dabei bitte die Anzahl der Personen
+                            erwähnen. Dazu eine Überweisung (10 € p.P.) an: Kreissportbund Unna,
+                            Konto DE48 4435 0060 0000 0750 02, Verwendungszweck: "Ukrainehilfe"
+                        </p>
+                    </div>
+                </div>
+                <img
+                    class="gala-image-one"
+                    src="./assets/img/home/gala-image.svg"
+                    alt="Festlicher Tisch"
+                />
             </div>
-            <img class="gala-image-one" src="./assets/img/home/gala-image.svg" alt="Festlicher Tisch" />
-        </div>
-        </section>
-    </main>
+        </main>
 
-    <footer class="footer">
-        <!----------------| address section |---------------->
-        <div class="footer-address-wrapper">
-            <!--- social media --->
-            <address class="footer__social-media">
-                <h3 class="footer__heading">Social Media</h3>
-                <ul class="social-media__list">
-                    <li>
-                        <img src="./assets/img/facebook-logo.svg" alt="facebook" class="social-media__icon" />
-                    </li>
-                    <li>
-                        <img src="./assets/img/instagram-logo.svg" alt="instagram" class="social-media__icon" />
-                    </li>
-                    <li>
-                        <img src="./assets/img/twitter-logo.svg" alt="twitter" class="social-media__icon" />
-                    </li>
-                </ul>
-            </address>
+        <footer class="footer">
+            <!----------------| address section |---------------->
+            <div class="footer-address-wrapper">
+                <!--- social media --->
+                <address class="footer__social-media">
+                    <h3 class="footer__heading">Social Media</h3>
+                    <ul class="social-media__list">
+                        <li>
+                            <img
+                                src="./assets/img/facebook-logo.svg"
+                                alt="facebook"
+                                class="social-media__icon"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="./assets/img/instagram-logo.svg"
+                                alt="instagram"
+                                class="social-media__icon"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="./assets/img/twitter-logo.svg"
+                                alt="twitter"
+                                class="social-media__icon"
+                            />
+                        </li>
+                    </ul>
+                </address>
 
-            <!--- organisation address --->
-            <address class="footer__adress">
+                <!--- organisation address --->
+                <address class="footer__adress">
                     <h3 class="footer__heading">Adresse:</h3>
                     Ukrainehilfe Unna<br />
                     Arne Schulte-Altedorneburg<br />
@@ -162,71 +218,104 @@
                     59423 Unna<br />
                 </address>
 
-            <!--- contact data --->
-            <address class="footer__contact">
-                <h3 class="footer__heading">Kontakt:</h3>
-                Arne Schulte-Altedorneburg <br />
-                Mail:
-                <a class="footer__link" href="mailto:arne@ukrainehilfe-unna.de">arne@ukrainehilfe-unna.de</a><br />
-                Tel.: <a class="footer__link" href="tel:+491774003004">+49 177 400 3004</a><br />
-            </address>
-            <hr class="footer__line" />
-        </div>
-
-        <!----------------| fundraiser section |---------------->
-        <section class="footer__fundraiser">
-            <h3 class="footer__heading">Aktuelle Spendenaktion</h3>
-            <div class="footer__logo-wrapper">
-                <img src="./assets/img/unna-logo-bw.svg" alt="" class="footer__fundraiser-logo"
-                    onclick="location.href='./aktuelle-spendenaktion/'" />
-                <button class=" btn_style--white footer__fundraiser-button" onclick="location.href='#fundraiser'">
-                    jetzt spenden
-                </button>
-                <a href="#fundraiser" class="footer__fundraiser-gala">Spendengala</a>
+                <!--- contact data --->
+                <address class="footer__contact">
+                    <h3 class="footer__heading">Kontakt:</h3>
+                    Arne Schulte-Altedorneburg <br />
+                    Mail:
+                    <a class="footer__link" href="mailto:arne@ukrainehilfe-unna.de"
+                        >arne@ukrainehilfe-unna.de</a
+                    ><br />
+                    Tel.: <a class="footer__link" href="tel:+491774003004">+49 177 400 3004</a
+                    ><br />
+                </address>
+                <hr class="footer__line" />
             </div>
-            <hr class="footer__line" />
-        </section>
 
-        <!----------------| navigation |---------------->
-        <nav class="footer__navigation">
-            <h3 class="footer__heading">Weitere Informationen:</h3>
-            <ul class="footer__navigation-list">
-                <li><a href="#" class="footer__navigation-link">Datenschutz</a></li>
-                <li><a href="#" class="footer__navigation-link">Impressum</a></li>
-            </ul>
-            <hr class="footer__line--small" />
-        </nav>
+            <!----------------| fundraiser section |---------------->
+            <section class="footer__fundraiser">
+                <h3 class="footer__heading">Aktuelle Spendenaktion</h3>
+                <div class="footer__logo-wrapper">
+                    <img
+                        src="./assets/img/unna-logo-bw.svg"
+                        alt=""
+                        class="footer__fundraiser-logo"
+                        onclick="location.href='./aktuelle-spendenaktion/'"
+                    />
+                    <button
+                        class="btn_style--white footer__fundraiser-button"
+                        onclick="location.href='#fundraiser'"
+                    >
+                        jetzt spenden
+                    </button>
+                    <a href="#fundraiser" class="footer__fundraiser-gala">Spendengala</a>
+                </div>
+                <hr class="footer__line" />
+            </section>
 
-        <!----------------| attendee info |---------------->
-        <section class="footer__bootcamp">
-            <h3 class="footer__heading">Abschlussprojekt</h3>
+            <!----------------| navigation |---------------->
+            <nav class="footer__navigation">
+                <h3 class="footer__heading">Weitere Informationen:</h3>
+                <ul class="footer__navigation-list">
+                    <li><a href="#" class="footer__navigation-link">Datenschutz</a></li>
+                    <li><a href="#" class="footer__navigation-link">Impressum</a></li>
+                </ul>
+                <hr class="footer__line--small" />
+            </nav>
+
+            <!----------------| attendee info |---------------->
+            <section class="footer__bootcamp">
+                <h3 class="footer__heading">Abschlussprojekt</h3>
                 <p class="footer__attendees-text">
                     Diese Seite wurde erstellt von
-                    <span class="footer__attendees--modifier">Teilnehmenden</span> als Abschlussprojekt bei Coding Bootcamps Europe.
+                    <span class="footer__attendees--modifier">Teilnehmenden</span> als
+                    Abschlussprojekt bei Coding Bootcamps Europe.
                 </p>
                 <p class="footer__heart">&#9825;</p>
                 <h3 class="footer__heading">Entwicklung</h3>
                 <div class="footer__development">
-                    <a href="https://www.linkedin.com/in/laura-hohlsiepe-72a00620b/" target="_blank"
-                        rel="noopener noreferrer" class="footer__development-link laura footer__devs--left">Laura
-                        Hohlsiepe</a>
-                    <a href="https://www.linkedin.com/in/bianca-raedler-12ab0822b/" target="_blank"
-                        rel="noopener noreferrer" class="footer__development-link bianca footer__devs--right">Bianca
-                        Raedler</a>
-                    <a href="https://www.linkedin.com/in/tobias-sindek/" target="_blank" rel="noopener noreferrer"
-                        class="footer__development-link tobias footer__devs--left">Tobias Sindek</a>
-                    <a href="https://github.com/Yokosumi" target="_blank" rel="noopener noreferrer"
-                        class="footer__development-link selman footer__devs--right">Selman Ciftci</a>
+                    <a
+                        href="https://www.linkedin.com/in/laura-hohlsiepe-72a00620b/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="footer__development-link laura footer__devs--left"
+                        >Laura Hohlsiepe</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/bianca-raedler-12ab0822b/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="footer__development-link bianca footer__devs--right"
+                        >Bianca Raedler</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/tobias-sindek/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="footer__development-link tobias footer__devs--left"
+                        >Tobias Sindek</a
+                    >
+                    <a
+                        href="https://github.com/Yokosumi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="footer__development-link selman footer__devs--right"
+                        >Selman Ciftci</a
+                    >
                 </div>
                 <h3 class="footer__heading">User Interface Design</h3>
                 <div class="footer__design">
-                    <a href="https://www.linkedin.com/in/patricia-p-51713a1aa/" target="_blank"
-                        rel="noopener noreferrer" class="footer__development-link">Patricia Prager</a>
+                    <a
+                        href="https://www.linkedin.com/in/patricia-p-51713a1aa/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="footer__development-link"
+                        >Patricia Prager</a
+                    >
                 </div>
-        </section>
-    </footer>
+            </section>
+        </footer>
 
-    <script src="./assets/scripts/menu.js"></script>
-</body>
-
+        <script src="./assets/scripts/menu.js"></script>
+    </body>
 </html>
