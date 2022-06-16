@@ -20,6 +20,15 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 1rem;
+}
+
+a > h1 {
+    color: white;
+    text-decoration: none;
+}
+
 button {
     cursor: pointer;
 }
