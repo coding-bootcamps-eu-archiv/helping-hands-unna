@@ -1646,6 +1646,12 @@ About
     transform: translateY(-500%);
     font-size: 0;
     transition: 0.2s;
+    height: 0;
+    opacity: 0;
+}
+
+.product-details img {
+    width: 100%;
 }
 
 .product-toggle:checked + .product-description > .product-details {
@@ -1654,6 +1660,8 @@ About
     transition: 0.2s;
     padding: 1rem;
     line-height: 2;
+    height: auto;
+    opacity: 1;
 }
 
 table {
